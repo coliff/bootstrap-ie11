@@ -1,0 +1,33 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+// Workaround for the SVG overflow bug.
+// See https://github.com/twbs/bootstrap/issues/26878
+
+svg {
+  overflow: hidden;
+}
+
+// Remove the default vertical scrollbar
+textarea {
+  overflow: auto;
+}
+
+// Correct the color inheritance from `fieldset` elements
+legend {
+  color: inherit;
+}
+
+// Template
+// Add the correct display for template & main
+
+template {
+  display: none;
+}
+
+// Main
+
+main {
+  display: block;
+}

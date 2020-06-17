@@ -1,0 +1,11 @@
+.card {
+  // Workaround for the image size bug
+  // See: https://github.com/twbs/bootstrap/pull/28855
+  min-height: 1px;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  flex-shrink: 0;
+}

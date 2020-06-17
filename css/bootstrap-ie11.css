@@ -1,0 +1,46 @@
+/*!
+ * Bootstrap for IE11 v5.0.0-alpha1
+ */
+.card {
+  min-height: 1px;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  flex-shrink: 0;
+}
+
+.modal-dialog-scrollable {
+  display: flex;
+}
+
+.navbar-collapse {
+  flex: 1 0 100%;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+svg {
+  overflow: hidden;
+}
+
+textarea {
+  overflow: auto;
+}
+
+legend {
+  color: inherit;
+}
+
+template {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+/*# sourceMappingURL=bootstrap-ie11.css.map */
