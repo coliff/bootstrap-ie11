@@ -1,3 +1,9 @@
 .modal-dialog-scrollable {
   display: flex;
 }
+
+.modal-dialog-centered::before {
+  display: block;
+  height: calc(100vh - 1rem);
+  content: "";
+}

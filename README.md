@@ -29,6 +29,7 @@ A.
 ## Known Issues
 
 - View a list of known issues at [https://github.com/coliff/bootstrap-ie11/issues](https://github.com/coliff/bootstrap-ie11/issues)
+- Issues with Toasts, Tooltips, form controls
 
 ## Demo
 
