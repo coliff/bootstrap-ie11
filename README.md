@@ -9,7 +9,7 @@ Bootstrap 5 ([currently in Alpha](https://v5.getbootstrap.com/)) drops support f
 
 Just add this in the `<head>` which will load the CSS and JS - just for IE users.
 
-`<script>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="/css/bootstrap-ie11.min.css"><script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"><\/script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"><\/script><script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.0.1/ie11CustomProperties.min.js"><\/script>');</script>`
+`<script>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="/css/bootstrap-ie11.min.css"><script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"><\/script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"><\/script><script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>`
 
 ## FAQS
 
