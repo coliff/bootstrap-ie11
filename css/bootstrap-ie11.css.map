@@ -6,15 +6,17 @@
 		"../scss/_card.scss",
 		"../scss/_modal.scss",
 		"../scss/_navbar.scss",
-		"../scss/_reboot.scss"
+		"../scss/_reboot.scss",
+		"../scss/_utilities.scss"
 	],
 	"sourcesContent": [
-		"/*!\n * Bootstrap for IE11 v5.0.0-alpha1\n */\n\n@import \"card\";\n@import \"modal\";\n@import \"navbar\";\n@import \"reboot\";\n",
+		"/*!\n * Bootstrap for IE11 v5.0.0-alpha1\n */\n\n@import \"card\";\n@import \"modal\";\n@import \"navbar\";\n@import \"reboot\";\n@import \"utilities\";\n",
 		".card {\n  // Workaround for the image size bug\n  // See: https://github.com/twbs/bootstrap/pull/28855\n  min-height: 1px;\n}\n\n.card-img,\n.card-img-top,\n.card-img-bottom {\n  flex-shrink: 0;\n}\n",
-		".modal-dialog-scrollable {\n  display: flex;\n}\n\n.modal-dialog-centered::before {\n  display: block;\n  height: calc(100vh - 1rem);\n  content: \"\";\n}\n",
+		".modal-dialog-scrollable {\r\n  display: flex;\r\n}\r\n\r\n.modal-dialog-centered::before {\r\n  display: block;\r\n  height: calc(100vh - 1rem);\r\n  content: \"\";\r\n}\r\n",
 		".navbar-collapse {\n  flex: 1 0 100%;\n}\n",
-		"body {\n  font-family: \"Segoe UI\", Arial, sans-serif;\n}\n\n// Workaround for the SVG overflow bug.\n// See https://github.com/twbs/bootstrap/issues/26878\n\nsvg {\n  overflow: hidden;\n}\n\n// Remove the default vertical scrollbar\ntextarea {\n  overflow: auto;\n}\n\n// Correct the color inheritance from `fieldset` elements\nlegend {\n  color: inherit;\n}\n\n// Template\n// Add the correct display for template & main\n\ntemplate {\n  display: none;\n}\n\n// Main\n\nmain {\n  display: block;\n}\n"
+		"body {\n  font-family: \"Segoe UI\", Arial, sans-serif;\n}\n\n// Workaround for the SVG overflow bug.\n// See https://github.com/twbs/bootstrap/issues/26878\n\nsvg {\n  overflow: hidden;\n}\n\n// Remove the default vertical scrollbar\ntextarea {\n  overflow: auto;\n}\n\n// Correct the color inheritance from `fieldset` elements\nlegend {\n  color: inherit;\n}\n\n// Template\n// Add the correct display for template & main\n\ntemplate {\n  display: none;\n}\n\n// Main\n\nmain {\n  display: block;\n}\n",
+		".align-self-auto {\n  -ms-grid-row-align: auto !important;\n}\n\n.align-self-center {\n  -ms-grid-row-align: center !important;\n}\n\n.align-self-stretch {\n  -ms-grid-row-align: stretch !important;\n}\n"
 	],
 	"names": [],
-	"mappings": "AAAA;;GAEG;ACFH,AAAA,KAAK,CAAC;EAGJ,UAAU,EAAE,GAAG;CAChB;;AAED,AAAA,SAAS;AACT,aAAa;AACb,gBAAgB,CAAC;EACf,WAAW,EAAE,CAAC;CACf;;ACVD,AAAA,wBAAwB,CAAC;EACvB,OAAO,EAAE,IAAI;CACd;;AAED,AAAA,sBAAsB,AAAA,QAAQ,CAAC;EAC7B,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,kBAAkB;EAC1B,OAAO,EAAE,EAAE;CACZ;;ACRD,AAAA,gBAAgB,CAAC;EACf,IAAI,EAAE,QAAQ;CACf;;ACFD,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,6BAA6B;CAC3C;;AAKD,AAAA,GAAG,CAAC;EACF,QAAQ,EAAE,MAAM;CACjB;;AAGD,AAAA,QAAQ,CAAC;EACP,QAAQ,EAAE,IAAI;CACf;;AAGD,AAAA,MAAM,CAAC;EACL,KAAK,EAAE,OAAO;CACf;;AAKD,AAAA,QAAQ,CAAC;EACP,OAAO,EAAE,IAAI;CACd;;AAID,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,KAAK;CACf"
+	"mappings": "AAAA;;GAEG;ACFH,AAAA,KAAK,CAAC;EAGJ,UAAU,EAAE,GAAG;CAChB;;AAED,AAAA,SAAS;AACT,aAAa;AACb,gBAAgB,CAAC;EACf,WAAW,EAAE,CAAC;CACf;;ACVD,AAAA,wBAAwB,CAAC;EACvB,OAAO,EAAE,IAAI;CACd;;AAED,AAAA,sBAAsB,AAAA,QAAQ,CAAC;EAC7B,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,kBAAkB;EAC1B,OAAO,EAAE,EAAE;CACZ;;ACRD,AAAA,gBAAgB,CAAC;EACf,IAAI,EAAE,QAAQ;CACf;;ACFD,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,6BAA6B;CAC3C;;AAKD,AAAA,GAAG,CAAC;EACF,QAAQ,EAAE,MAAM;CACjB;;AAGD,AAAA,QAAQ,CAAC;EACP,QAAQ,EAAE,IAAI;CACf;;AAGD,AAAA,MAAM,CAAC;EACL,KAAK,EAAE,OAAO;CACf;;AAKD,AAAA,QAAQ,CAAC;EACP,OAAO,EAAE,IAAI;CACd;;AAID,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,KAAK;CACf;;AChCD,AAAA,gBAAgB,CAAC;EACf,kBAAkB,EAAE,eAAe;CACpC;;AAED,AAAA,kBAAkB,CAAC;EACjB,kBAAkB,EAAE,iBAAiB;CACtC;;AAED,AAAA,mBAAmB,CAAC;EAClB,kBAAkB,EAAE,kBAAkB;CACvC"
 }

@@ -1,4 +1,4 @@
 /*!
  * Bootstrap for IE11 v5.0.0-alpha1
- */.card{min-height:1px}.card-img,.card-img-bottom,.card-img-top{flex-shrink:0}.modal-dialog-scrollable{display:flex}.modal-dialog-centered::before{display:block;height:calc(100vh - 1rem);content:""}.navbar-collapse{flex:1 0 100%}body{font-family:"Segoe UI",Arial,sans-serif}svg{overflow:hidden}textarea{overflow:auto}legend{color:inherit}template{display:none}main{display:block}
+ */.card{min-height:1px}.card-img,.card-img-bottom,.card-img-top{flex-shrink:0}.modal-dialog-scrollable{display:flex}.modal-dialog-centered::before{display:block;height:calc(100vh - 1rem);content:""}.navbar-collapse{flex:1 0 100%}body{font-family:"Segoe UI",Arial,sans-serif}svg{overflow:hidden}textarea{overflow:auto}legend{color:inherit}template{display:none}main{display:block}.align-self-auto{-ms-grid-row-align:auto!important}.align-self-center{-ms-grid-row-align:center!important}.align-self-stretch{-ms-grid-row-align:stretch!important}
 /*# sourceMappingURL=bootstrap-ie11.min.css.map */
