@@ -61,4 +61,64 @@ main {
   -ms-grid-row-align: stretch !important;
 }
 
+@media (min-width: 576px) {
+  .align-self-sm-auto {
+    -ms-grid-row-align: auto !important;
+  }
+  .align-self-sm-center {
+    -ms-grid-row-align: center !important;
+  }
+  .align-self-sm-stretch {
+    -ms-grid-row-align: stretch !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .align-self-md-auto {
+    -ms-grid-row-align: auto !important;
+  }
+  .align-self-md-center {
+    -ms-grid-row-align: center !important;
+  }
+  .align-self-md-stretch {
+    -ms-grid-row-align: stretch !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .align-self-lg-auto {
+    -ms-grid-row-align: auto !important;
+  }
+  .align-self-lg-center {
+    -ms-grid-row-align: center !important;
+  }
+  .align-self-lg-stretch {
+    -ms-grid-row-align: stretch !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .align-self-xl-auto {
+    -ms-grid-row-align: auto !important;
+  }
+  .align-self-xl-center {
+    -ms-grid-row-align: center !important;
+  }
+  .align-self-xl-stretch {
+    -ms-grid-row-align: stretch !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .align-self-xxl-auto {
+    -ms-grid-row-align: auto !important;
+  }
+  .align-self-xxl-center {
+    -ms-grid-row-align: center !important;
+  }
+  .align-self-xxl-stretch {
+    -ms-grid-row-align: stretch !important;
+  }
+}
+
 /*# sourceMappingURL=bootstrap-ie11.css.map */
