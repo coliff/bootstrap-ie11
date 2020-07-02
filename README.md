@@ -20,7 +20,7 @@ Just add this in the `<head>` which will load the CSS and JS - just for IE users
 - Remove the default vertical scrollbar from `textarea`
 - Fixes for card image size bug
 - Fixes for modals (`.modal-dialog-centered` and `.modal-dialog-scrollable`)
-- Fixes for navbars (use flex for `.navbar-collapse`)
+- Fixes for navbars (using flex for `.navbar-collapse`)
 - Adds -ms- vendor prefixes for grid layout utilities (`.align-self-auto`, `.align-self-center` and `.align-self-stretch`)
 
 ### Any other things to look out for?**
