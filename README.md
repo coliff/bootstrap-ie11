@@ -13,23 +13,20 @@ Just add this in the `<head>` which will load the CSS and JS - just for IE users
 
 ## FAQS
 
-**Q. What does this fix/polyfill?**
-
-A.
+### What does this fix/polyfill?**
 
 - Polyfill for CSS variables courtesy of [ie11CustomProperties](https://github.com/nuxodin/ie11CustomProperties)
 - Workaround for the SVG overflow bug
 - Remove the default vertical scrollbar from `textarea`
-- Fixes for cards, modals and navbars
+- Fixes for card image size bug
+- Fixes for modals (`.modal-dialog-centered` and `.modal-dialog-scrollable`)
+- Fixes for navbars (use flex for `.navbar-collapse`)
+- Adds -ms- vendor prefixes for grid layout utilities (`.align-self-auto`, `.align-self-center` and `.align-self-stretch`)
 
-**Q. Any other things to look out for?**
+### Any other things to look out for?**
 
 - Internet Explorer 11 does not support vertical alignment of flex items when the flex container has a `min-height`. [See Flexbugs #3 for more details.](https://github.com/philipwalton/flexbugs#flexbug-3)
-
-## Known Issues
-
 - View a list of known issues at [https://github.com/coliff/bootstrap-ie11/issues](https://github.com/coliff/bootstrap-ie11/issues)
-- Issues with Toasts, Tooltips, form controls
 
 ## Demo
 
