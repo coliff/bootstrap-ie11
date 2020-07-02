@@ -1,0 +1,9 @@
+/* makes the default checkbox icon nicer */
+.form-check-input {
+  opacity: .7;
+}
+
+/* hides the default select icon */
+select::-ms-expand {
+  display: none;
+}

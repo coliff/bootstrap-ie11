@@ -2,8 +2,11 @@
  * Bootstrap for IE11 v5.0.0-alpha1
  */
 
+@import "reboot";
+
 @import "card";
+@import "forms";
 @import "modal";
 @import "navbar";
-@import "reboot";
+
 @import "utilities";
