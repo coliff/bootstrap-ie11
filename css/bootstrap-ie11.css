@@ -35,9 +35,14 @@ main {
   flex-shrink: 0;
 }
 
+/* IE11 doesn't support input=color. This fixes the input so its not too narrow to allow a hex input */
+.form-control-color {
+  max-width: 5rem;
+}
+
 /* makes the default checkbox icon nicer */
 .form-check-input {
-  opacity: .7;
+  opacity: .6;
 }
 
 /* hides the default select icon */
