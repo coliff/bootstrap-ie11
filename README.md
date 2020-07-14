@@ -1,8 +1,8 @@
-<p style="align:center">
+<p align="center">
 <img src="https://repository-images.githubusercontent.com/171514859/420fd400-c07d-11ea-90cb-58dfe1d8a3f3" width="500" alt="Bootstrap 5 for IE 11">
 </p>
 
-# Bootstrap 5 for IE 11
+<h3 align="center">Bootstrap 5 for IE 11</h3>
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/coliff/bootstrap-ie11/master/LICENSE)
 [![github-stars-image](https://img.shields.io/github/stars/coliff/bootstrap-ie11.svg?label=github%20stars)](https://github.com/coliff/bootstrap-ie11)
