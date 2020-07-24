@@ -2,8 +2,28 @@
   display: flex;
 }
 
+.modal-dialog-scrollable .modal-content {
+  max-height: calc(100vh - 1rem);
+}
+
+// Ensure `modal-dialog-centered` extends the full height of the view
 .modal-dialog-centered::before {
   display: block;
   height: calc(100vh - 1rem);
   content: "";
+}
+
+// Ensure `.modal-body` shows scrollbar
+.modal-dialog-centered.modal-dialog-scrollable {
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.modal-dialog-centered.modal-dialog-scrollable .modal-content {
+  max-height: none;
+}
+
+.modal-dialog-centered.modal-dialog-scrollable::before {
+  content: none;
 }
