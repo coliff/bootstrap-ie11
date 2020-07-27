@@ -1,10 +1,1 @@
-{
-  "extends": "stylelint-config-twbs-bootstrap/scss",
-  "rules":
-    {
-      "declaration-no-important": null,
-      "property-blacklist": ["grid"],
-      "property-no-vendor-prefix": null,
-      "selector-class-pattern": "^[a-z][a-z0-9\\-]*[a-z0-9]$"
-    },
-}
+{ "extends": "stylelint-config-twbs-bootstrap/scss", "rules": { "declaration-no-important": null, "number-leading-zero": null, "property-no-vendor-prefix": null } }

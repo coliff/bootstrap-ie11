@@ -35,17 +35,30 @@ main {
   flex-shrink: 0;
 }
 
-/* IE11 doesn't support input=color. This fixes the input so its not too narrow to allow a hex input */
 .form-control-color {
   max-width: 5rem;
 }
 
-/* makes the default checkbox icon nicer */
 .form-check-input {
-  opacity: .6;
+  border-color: #ccc;
+  box-shadow: 0 0 0 0.07rem rgba(111, 111, 111, 0.3);
 }
 
-/* hides the default select icon */
+input::-ms-check {
+  color: transparent;
+  background-color: transparent;
+  border: 0;
+}
+
+.form-switch .form-check-input,
+.form-switch .form-check-input:focus {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-2 -4 8 8'%3e%3ccircle r='3' fill='%23ccc'/%3e%3c/svg%3e");
+}
+
+.form-switch :checked.form-check-input {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-6 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
 select::-ms-expand {
   display: none;
 }
@@ -54,10 +67,28 @@ select::-ms-expand {
   display: flex;
 }
 
+.modal-dialog-scrollable .modal-content {
+  max-height: calc(100vh - 1rem);
+}
+
 .modal-dialog-centered::before {
   display: block;
   height: calc(100vh - 1rem);
   content: "";
+}
+
+.modal-dialog-centered.modal-dialog-scrollable {
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.modal-dialog-centered.modal-dialog-scrollable .modal-content {
+  max-height: none;
+}
+
+.modal-dialog-centered.modal-dialog-scrollable::before {
+  content: none;
 }
 
 .navbar-collapse {
