@@ -37,6 +37,8 @@ If you'd prefer to load the bootstrap-ie11 CSS without JavaScript you could use 
 - Fixes for modals (`.modal-dialog-centered` and `.modal-dialog-scrollable`)
 - Fixes for navbars (using flex for `.navbar-collapse`)
 - Fixes for forms (checkboxes, switches and selects)
+- Fix for the `btn-close-white` SVG icon color
+- Fix for dark carousel previous and next SVG icons
 - Adds -ms- vendor prefixes for grid layout utilities (`.align-self-auto`, `.align-self-center` and `.align-self-stretch`)
 
 ### Any other things to look out for
