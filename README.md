@@ -13,8 +13,8 @@ Bootstrap 5 ([currently in Alpha](https://v5.getbootstrap.com/)) drops support f
 
 - Download the [latest release](https://github.com/coliff/bootstrap-ie11)
 - Clone the repo git clone <https://github.com/coliff/bootstrap-ie11.git>
-- Install with npm `npm install bootstrap-ie11`
-- Install with yarn `yarn add bootstrap-ie11`
+- Install with [npm](https://www.npmjs.com/package/bootstrap-ie11) `npm install bootstrap-ie11`
+- Install with [yarn](https://classic.yarnpkg.com/en/package/bootstrap-ie11) `yarn add bootstrap-ie11`
 
 ## Usage
 
@@ -38,7 +38,7 @@ If you'd prefer to load the bootstrap-ie11 CSS without JavaScript you could use 
 - Fixes for navbars (using flex for `.navbar-collapse`)
 - Fixes for forms (checkboxes, switches and selects)
 - Fix for the `btn-close-white` SVG icon color
-- Fix for dark carousel previous and next SVG icons
+- Fix for dark carousel previous and next SVG icon colors
 - Adds -ms- vendor prefixes for grid layout utilities (`.align-self-auto`, `.align-self-center` and `.align-self-stretch`)
 
 ### Any other things to look out for
