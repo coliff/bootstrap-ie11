@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IE11 Test</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap-ie11.min.css"
+    media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
+</head>
+
+<body class="container my-5">
+
+  <h3>Checks</h3>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+      Default checkbox
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked">
+      Checked checkbox
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+    <label class="form-check-label" for="flexCheckDisabled">
+      Disabled checkbox
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexCheckCheckedDisabled">
+      Disabled checked checkbox
+    </label>
+  </div>
+
+  <hr class="my-5">
+
+  <h3>Switches</h3>
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+  </div>
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+    <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+  </div>
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+    <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+  </div>
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+  </div>
+
+  <hr class="my-5">
+
+  <h3>Select</h3>
+
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+
+  <hr class="my-5">
+
+  <h3>Dark Carousel</h3>
+
+  <div class="carousel carousel-dark slide border border-light" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleDark" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleDark" data-slide-to="1"></li>
+      <li data-target="#carouselExampleDark" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100 py-5" height="199" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+  <hr class="my-5">
+
+  <h3>White Close Button</h3>
+
+  <div class="bg-dark p-3">
+    <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+    <button type="button" class="btn-close btn-close-white" disabled aria-label="Close"></button>
+  </div>
+
+  <hr class="my-5">
+
+  <h3>Disabled Form - Select</h3>
+
+  <select class="form-select" aria-label="Disabled select example" disabled>
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+
+  <hr class="my-5">
+
+  <h3>Disabled Form - Input</h3>
+
+  <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+  <input class="form-control" type="text" placeholder="Disabled readonly input" aria-label="Disabled input example"
+    disabled readonly>
+
+  <hr class="my-5">
+
+  <h3>Disabled Form</h3>
+
+  <form>
+    <fieldset disabled aria-label="Disabled fieldset example">
+      <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Disabled input</label>
+        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+      </div>
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label">Disabled select menu</label>
+        <select id="disabledSelect" class="form-select">
+          <option>Disabled select</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+          <label class="form-check-label" for="disabledFieldsetCheck">
+            Can't check this
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+  </form>
+
+  <style>
+    fieldset:disabled .form-control {
+      background-color: #e9ecef !important;
+    }
+
+    fieldset[aria-label^="Disabled"] .form-control,
+    fieldset[aria-label^="Disabled"] .form-select {
+      background-color: #e9ecef !important;
+    }
+  </style>
+
+</body>
+
+</html>
