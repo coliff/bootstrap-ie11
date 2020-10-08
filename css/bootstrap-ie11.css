@@ -99,8 +99,4 @@ select::-ms-expand {
   content: none;
 }
 
-.navbar-collapse {
-  flex: 1 0 100%;
-}
-
 /*# sourceMappingURL=bootstrap-ie11.css.map */
