@@ -18,3 +18,5 @@ jobs:
           FILTER_REGEX_EXCLUDE: .*css/.*
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_ANSIBLE: false
+          VALIDATE_MARKDOWN: false
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
