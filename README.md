@@ -54,7 +54,7 @@ If you'd prefer to load the bootstrap-ie11 CSS without JavaScript you could use 
 
 ### How can I test this?
 
-- Microsoft offer free [Windows 10 VMs with IE11](https://developer.microsoft.com/microsoft-edge/tools/vms/)
+- Microsoft offer free [Windows 7/8.1 VMs with IE11](https://developer.microsoft.com/microsoft-edge/tools/vms/)
 - [Browserstack](https://www.browserstack.com) also offers IE11 for testing
 
 ## Demo
