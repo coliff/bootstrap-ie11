@@ -20,15 +20,19 @@ Bootstrap 5 ([currently in Alpha](https://v5.getbootstrap.com/)) drops support f
 
 Just add this in the `<head>` which will load the CSS and JS - just for IE users.
 
-`<script>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="/css/bootstrap-ie11.min.css"><script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"><\/script><script>!function () { var e, t; ((e = document.createEvent("CustomEvent")).initEvent("Bootstrap", !0, !0), e.preventDefault(), e.defaultPrevented) || (t = Event.prototype.preventDefault, Event.prototype.preventDefault = function () { this.cancelable && (t.call(this), Object.defineProperty(this, "defaultPrevented", { get: function () { return !0 }, configurable: !0 })) }) }();<\/script>');</script>`
+```html
+<script>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="/css/bootstrap-ie11.min.css"><script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"><\/script><script>!function () { var e, t; ((e = document.createEvent("CustomEvent")).initEvent("Bootstrap", !0, !0), e.preventDefault(), e.defaultPrevented) || (t = Event.prototype.preventDefault, Event.prototype.preventDefault = function () { this.cancelable && (t.call(this), Object.defineProperty(this, "defaultPrevented", { get: function () { return !0 }, configurable: !0 })) }) }();<\/script>');</script>
+```
 
 If you'd prefer to load the bootstrap-ie11 CSS without JavaScript you could use an IE-only media query as follow:
 
-`<link rel="stylesheet" href="/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">`
+```html
+<link rel="stylesheet" href="/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
+```
 
 ## FAQS
 
-### What does this fix/polyfill
+### What does this fix/polyfill?
 
 - Polyfill for CSS variables courtesy of [ie11CustomProperties](https://github.com/nuxodin/ie11CustomProperties)
 - Workaround for the SVG overflow bug
@@ -39,13 +43,18 @@ If you'd prefer to load the bootstrap-ie11 CSS without JavaScript you could use 
 - Fixes for forms (checkboxes, switches and selects)
 - Fix for the `btn-close-white` SVG icon color
 - Fix for dark carousel previous and next SVG icon colors
-- Adds -ms- vendor prefixes for grid layout utilities (`.align-self-auto`, `.align-self-center` and `.align-self-stretch`)
 
-### Any other things to look out for
+### Any other things to look out for?
 
 - Internet Explorer 11 does not support vertical alignment of flex items when the flex container has a `min-height`. [See Flexbugs #3 for more details.](https://github.com/philipwalton/flexbugs#flexbug-3)
 - The ie11CustomProperties polyfill currently removes the `!important` from any CSS variables with that set [https://github.com/nuxodin/ie11CustomProperties/issues/62](https://github.com/nuxodin/ie11CustomProperties/issues/62).
 - View a list of known issues at [https://github.com/coliff/bootstrap-ie11/issues](https://github.com/coliff/bootstrap-ie11/issues)
+- There is a slight delay before the ie11CustomProperties polyfill works its magic. Consider adding `body{font-family:"Segoe UI", Arial, sans-serif;}` to your IE11-only stylesheet so there isn't a delay in the text displaying
+
+### I don't have access to a PC with IE11 - how can I test this?
+
+- Microsoft offer free [Windows 10 VMs with IE11](https://developer.microsoft.com/microsoft-edge/tools/vms/)
+- [Browserstack](https://www.browserstack.com) also offers IE11 for testing
 
 ## Demo
 
