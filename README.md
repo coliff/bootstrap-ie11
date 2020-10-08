@@ -5,7 +5,9 @@
 <h3 align="center">Bootstrap 5 for IE 11</h3>
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/coliff/bootstrap-ie11/master/LICENSE)
+[![GitHub Super-Linter](https://github.com/coliff/bootstrap-ie11/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 [![github-stars-image](https://img.shields.io/github/stars/coliff/bootstrap-ie11.svg?label=github%20stars)](https://github.com/coliff/bootstrap-ie11)
+[![NPM Version](https://img.shields.io/npm/v/bootstrap-ie11)](https://www.npmjs.com/package/bootstrap-ie11)
 
 Bootstrap 5 ([currently in Alpha](https://v5.getbootstrap.com/)) drops support for Internet Explorer 11, but you can add support back by simply adding a CSS file and a few JavaScript polyfills.
 
@@ -50,7 +52,7 @@ If you'd prefer to load the bootstrap-ie11 CSS without JavaScript you could use 
 - View a list of known issues at [https://github.com/coliff/bootstrap-ie11/issues](https://github.com/coliff/bootstrap-ie11/issues)
 - There is a slight delay before the ie11CustomProperties polyfill works its magic. Consider adding `body{font-family:"Segoe UI", Arial, sans-serif;}` to your IE11-only stylesheet so there isn't a delay in the text displaying
 
-### I don't have access to a PC with IE11 - how can I test this?
+### How can I test this?
 
 - Microsoft offer free [Windows 10 VMs with IE11](https://developer.microsoft.com/microsoft-edge/tools/vms/)
 - [Browserstack](https://www.browserstack.com) also offers IE11 for testing
