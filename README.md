@@ -4,9 +4,9 @@
 
 <h3 align="center">Bootstrap 5 for IE 11</h3>
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/coliff/bootstrap-ie11/master/LICENSE)
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/coliff/bootstrap-ie11/main/LICENSE)
 [![GitHub Super-Linter](https://github.com/coliff/bootstrap-ie11/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
-[![github-stars-image](https://img.shields.io/github/stars/coliff/bootstrap-ie11.svg?label=github%20stars)](https://github.com/coliff/bootstrap-ie11)
+[![GitHub stars image](https://img.shields.io/github/stars/coliff/bootstrap-ie11.svg?label=github%20stars)](https://github.com/coliff/bootstrap-ie11)
 [![NPM Version](https://img.shields.io/npm/v/bootstrap-ie11)](https://www.npmjs.com/package/bootstrap-ie11)
 
 Bootstrap 5 ([currently in Alpha](https://v5.getbootstrap.com/)) drops support for Internet Explorer 11, but you can add support back by simply adding a CSS file and a few JavaScript polyfills.
