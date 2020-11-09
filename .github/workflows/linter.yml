@@ -17,6 +17,6 @@ jobs:
         env:
           FILTER_REGEX_EXCLUDE: .*css/.*
           VALIDATE_ANSIBLE: false
-          EDITORCONFIG: false
+          VALIDATE_EDITORCONFIG: false
           VALIDATE_MARKDOWN: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
