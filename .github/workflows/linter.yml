@@ -16,7 +16,7 @@ jobs:
         uses: docker://github/super-linter:v3
         env:
           FILTER_REGEX_EXCLUDE: .*css/.*
-          VALIDATE_ALL_CODEBASE: true
           VALIDATE_ANSIBLE: false
+          EDITORCONFIG: false
           VALIDATE_MARKDOWN: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
