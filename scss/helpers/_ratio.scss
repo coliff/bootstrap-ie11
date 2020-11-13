@@ -1,0 +1,15 @@
+.ratio-1x1::before {
+  padding-top: 100%;
+}
+
+.ratio-4x3::before {
+  padding-top: calc(3 / 4 * 100%);
+}
+
+.ratio-16x9::before {
+  padding-top: calc(9 / 16 * 100%);
+}
+
+.ratio-21x9::before {
+  padding-top: calc(9 / 21 * 100%);
+}

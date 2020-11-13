@@ -1,0 +1,12 @@
+.btn {
+  -ms-user-select: none;
+}
+
+.btn-close {
+  background-clip: content-box;
+}
+
+.btn-close:disabled,
+.btn-close.disabled {
+  -ms-user-select: none;
+}

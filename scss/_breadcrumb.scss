@@ -1,0 +1,7 @@
+.breadcrumb-item {
+  display: flex;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+}
