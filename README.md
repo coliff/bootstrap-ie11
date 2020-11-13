@@ -41,9 +41,10 @@ If you'd prefer to load the bootstrap-ie11 CSS without JavaScript you could use 
 - Remove the default vertical scrollbar from `textarea`
 - Fixes for card image size bug
 - Fixes for modals (`.modal-dialog-centered` and `.modal-dialog-scrollable`)
-- Fixes for forms (checkboxes, switches and selects)
+- Fixes for forms (inputs, checkboxes, switches, selects, ranges, placeholders and floating labels)
 - Fix for the `btn-close-white` SVG icon color
 - Fix for dark carousel previous and next SVG icon colors
+- Adds vendor prefixes for `user-select-auto` and `user-select-none` utilities
 
 ### Any other things to look out for?
 
