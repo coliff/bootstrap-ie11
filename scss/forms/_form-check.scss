@@ -1,7 +1,6 @@
-// IE11 doesn't support input=color. This fixes the input so its not too narrow to allow a hex input
-.form-control-color {
-  max-width: 5rem;
-}
+//
+// Check/radio
+//
 
 // makes the default checkbox icon nicer
 .form-check-input {
@@ -16,6 +15,15 @@ input::-ms-check {
   border: 0;
 }
 
+// Unstyle the caret on `<select>`s
+select::-ms-expand {
+  display: none;
+}
+
+//
+// Switch
+//
+
 .form-switch .form-check-input,
 .form-switch .form-check-input:focus {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -4 8 8'%3e%3ccircle r='3' fill='%23ccc'/%3e%3c/svg%3e");
@@ -23,9 +31,4 @@ input::-ms-check {
 
 .form-switch :checked.form-check-input {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-8 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-}
-
-// Unstyle the caret on `<select>`s
-select::-ms-expand {
-  display: none;
 }

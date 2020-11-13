@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap 5 - IE11 Test</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap-ie11.min.css"
+    media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
+
+  <script nomodule crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"></script>
+  <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script><script>!function () { var e, t; ((e = document.createEvent("CustomEvent")).initEvent("Bootstrap", !0, !0), e.preventDefault(), e.defaultPrevented) || (t = Event.prototype.preventDefault, Event.prototype.preventDefault = function () { this.cancelable && (t.call(this), Object.defineProperty(this, "defaultPrevented", { get: function () { return !0 }, configurable: !0 })) }) }();<\/script>');</script>
+</head>
+
+<style>
+  .dropdown-item {
+    font-size: 13px;
+  }
+
+  .container {
+    max-width: 898px;
+  }
+</style>
+
+<body class="container mb-5">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fixed-top mb-5">
+    <div class="container">
+      <a class="navbar-brand" href="#">Bootstrap 5 for IE 11</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-expanded="false">
+              Tests
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <small class="ml-2 text-muted">Components</small>
+              </li>
+              <li><a class="dropdown-item" href="#accordion">Accordion</a></li>
+              <li><a class="dropdown-item" href="#breadcrumb">Breadcrumb</a></li>
+              <li><a class="dropdown-item" href="#buttons">Buttons</a></li>
+              <li><a class="dropdown-item" href="#carousel">Carousel</a></li>
+              <li><a class="dropdown-item" href="#close-button">Close button</a></li>
+              <li><a class="dropdown-item" href="#modal">Modal</a></li>
+              <li><a class="dropdown-item" href="#progress">Progress</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <small class="ml-2 text-muted">Forms</small>
+              </li>
+              <li><a class="dropdown-item" href="#checks">Checks & Radios</a></li>
+              <li><a class="dropdown-item" href="#switches">Switches</a></li>
+              <li><a class="dropdown-item" href="#select">Select</a></li>
+              <li><a class="dropdown-item" href="#disabled-form">Disabled Form</a></li>
+              <li><a class="dropdown-item" href="#range">Range</a></li>
+              <li><a class="dropdown-item" href="#input-color">Input Color</a></li>
+              <li><a class="dropdown-item" href="#input-group">Input Group</a></li>
+              <li><a class="dropdown-item" href="#floating-labels">Floating Labels</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <small class="ml-2 text-muted">Helpers</small>
+              </li>
+              <li><a class="dropdown-item" href="#aspect-ratio">Ratio</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <small class="ml-2 text-muted">Utilities</small>
+              </li>
+              <li><a class="dropdown-item" href="#user-select">User Select</a></li>
+              <li><a class="dropdown-item" href="#pointer-events">Pointer events</a></li>
+              <li><a class="dropdown-item" href="#position">Position</a></li>
+              <li><a class="dropdown-item" href="#word-break">Word Break</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="https://github.com/coliff/bootstrap-ie11">GitHub</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+      </nav>
+
+      <h2 class="text-muted mb-4 h1 d-none">Components</h2>
+
+      <hr id="accordion" class="my-5">
+
+      <h3 class="pt-3">Accordion</h3>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin
+              adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+              as
+              well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+              our
+              default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin
+              adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+              as
+              well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+              our
+              default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
+              adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+              as
+              well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+              our
+              default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr id="breadcrumb" class="my-5">
+
+      <h3 class="pt-3">Breadcrumb</h3>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+
+      <hr id="buttons" class="my-5">
+
+      <h3 class="pt-3">Buttons</h3>
+
+      <p>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+      </p>
+
+      <p>
+        <button type="button" class="btn btn-primary" disabled>Disabled Primary button</button>
+        <button type="button" class="btn btn-secondary" disabled>Disabled Button</button>
+      </p>
+
+      <hr class="my-5" id="carousel">
+
+      <h3 class="pt-3">Dark Carousel</h3>
+
+      <div class="carousel carousel-dark slide border border-light bg-light" data-ride="carousel" id="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" height="199" alt="">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" height="199" alt="">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+
+      <hr class="my-5" id="close-button">
+
+      <h3 class="pt-3">Close button</h3>
+
+      <div class="bg-dark p-3">
+        <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+        <button type="button" class="btn-close btn-close-white" disabled aria-label="Close"></button>
+      </div>
+
+      <hr class="my-5" id="modal">
+
+      <h3 class="pt-3">Modal</h3>
+
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+      </button>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5" id="progress">
+
+      <h3 class="pt-3">Progress</h3>
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+          aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+      </div>
+
+      <hr class="my-5" id="checks">
+
+      <h3 class="pt-3">Checks & Radios</h3>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+      Default checkbox
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked">
+      Checked checkbox
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+    <label class="form-check-label" for="flexCheckDisabled">
+      Disabled checkbox
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexCheckCheckedDisabled">
+      Disabled checked checkbox
+    </label>
+  </div>
+
+  <div class="form-check mt-3">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      Default radio
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+    <label class="form-check-label" for="flexRadioDefault2">
+      Default checked radio
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled>
+    <label class="form-check-label" for="flexRadioDisabled">
+      Disabled radio
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexRadioCheckedDisabled">
+      Disabled checked radio
+    </label>
+  </div>
+
+  <hr class="my-5" id="switches">
+
+  <h3 class="pt-3">Switches</h3>
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+  </div>
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+    <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+  </div>
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+    <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+  </div>
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+  </div>
+
+  <hr class="my-5" id="select">
+
+  <h3 class="pt-3">Select</h3>
+
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+
+  <hr class="my-5" id="disabled-form">
+
+  <h5 class="mt-3">Disabled Select</h5>
+
+  <select class="form-select" aria-label="Disabled select example" disabled>
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+  </select>
+
+  <h5 class="mt-2">Disabled Input</h5>
+
+  <input class="form-control mb-2" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+  <input class="form-control" type="text" placeholder="Disabled readonly input" aria-label="Disabled input example"
+    disabled readonly>
+
+  <h5 class="mt-3">Disabled Fieldset</h5>
+
+  <form>
+    <fieldset disabled aria-label="Disabled fieldset example">
+      <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Disabled input</label>
+        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+      </div>
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label">Disabled select menu</label>
+        <select id="disabledSelect" class="form-select">
+          <option>Disabled select</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+          <label class="form-check-label" for="disabledFieldsetCheck">
+            Can't check this
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+  </form>
+
+  <hr class="my-5" id="range">
+
+  <h3 class="pt-3">Range</h3>
+
+  <label for="customRange1" class="form-label">Example range</label>
+  <input type="range" class="form-range" id="customRange1">
+
+  <label for="disabledRange" class="form-label mt-2">Disabled range</label>
+  <input type="range" class="form-range" id="disabledRange" disabled>
+
+  <hr class="my-5" id="input-color">
+
+  <h3 class="pt-3">Input Color</h3>
+
+  <label for="exampleColorInput" class="form-label">Color picker</label>
+  <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
+    title="Choose your color">
+
+  <label for="exampleColorInput2" class="form-label mt-4">Color picker with <code>font-monospace</code> and
+    <code>text-uppercase</code></label>
+  <input type="color" class="form-control form-control-color font-monospace and text-uppercase" id="exampleColorInput2"
+    value="#563d7c" title="Choose your color" maxlength="7">
+
+  <hr class="my-5" id="input-group">
+
+  <h3 class="pt-3">Input Group</h3>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+      aria-describedby="basic-addon2">
+    <span class="input-group-text" id="basic-addon2">@example.com</span>
+  </div>
+
+  <label for="basic-url" class="form-label">Your vanity URL</label>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text">$</span>
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+    <span class="input-group-text">.00</span>
+  </div>
+
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+    <span class="input-group-text">@</span>
+    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-text">With textarea</span>
+    <textarea class="form-control" aria-label="With textarea"></textarea>
+  </div>
+
+  <hr class="my-5" id="floating-labels">
+
+  <h3 class="pt-3">Floating Labels</h3>
+
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+    <label for="floatingTextarea">Textarea</label>
+  </div>
+
+  <div class="form-floating">
+    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <label for="floatingSelect">Works with selects</label>
+  </div>
+
+  <hr class="my-5" id="aspect-ratio">
+
+  <h3 class="pt-3">Aspect Ratio</h3>
+
+  <div>
+
+    <div class="d-inline-block ratio ratio-1x1" style="width:10rem">
+      <div class="d-flex align-items-center justify-content-center bg-light border">1x1</div>
+    </div>
+    <div class="d-inline-block ratio ratio-4x3" style="width:10rem">
+      <div class="d-flex align-items-center justify-content-center bg-light border">4x3</div>
+    </div>
+    <div class="d-inline-block ratio ratio-16x9" style="width:10rem">
+      <div class="d-flex align-items-center justify-content-center bg-light border">16x9</div>
+    </div>
+    <div class="d-inline-block ratio ratio-21x9" style="width:10rem">
+      <div class="d-flex align-items-center justify-content-center bg-light border">21x9</div>
+    </div>
+
+  </div>
+
+  <hr class="my-5" id="user-select">
+
+  <h3 class="pt-3">Interactions</h3>
+
+  <p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
+  <p class="user-select-auto">This paragraph has default select behavior.</p>
+  <p class="user-select-none">This paragraph will not be selectable when clicked by the user.</p>
+
+  <hr class="my-5" id="pointer-events">
+
+  <h3 class="pt-3">Pointer events</h3>
+
+  <p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">This link</a> can not be clicked.</p>
+  <p><a href="#" class="pe-auto">This link</a> can be clicked (this is default behaviour).</p>
+  <p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">This link</a> can not be clicked because the
+    <code>pointer-events</code> property is inherited from its parent. However, <a href="#" class="pe-auto">this
+      link</a>
+    has a <code>pe-auto</code> class and can be clicked.</p>
+
+
+  <hr class="my-5" id="position">
+
+  <h3 class="pt-3">Position</h3>
+
+  <div class="py-3 clearfix">
+    <button type="button" class="btn btn-primary position-relative mr-3">
+      Mails <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-secondary">+99 <span
+          class="visually-hidden">unread messages</span></span>
+    </button>
+
+    <button type="button" class="btn btn-dark position-relative mr-3">
+      Marker <svg width="1em" height="1em" viewBox="0 0 16 16"
+        class="position-absolute top-100 left-50 translate-middle mt-1 bi bi-caret-down-fill" fill="#343a40"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+      </svg>
+    </button>
+
+    <button type="button" class="btn btn-primary position-relative">
+      Alerts <span
+        class="position-absolute top-0 left-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span
+          class="visually-hidden">unread messages</span></span>
+    </button>
+  </div>
+
+  <div class="position-relative m-4">
+    <div class="progress" style="height: 1px;">
+      <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100"></div>
+    </div>
+    <button type="button" class="position-absolute top-0 left-0 translate-middle btn btn-sm btn-primary rounded-pill"
+      style="width: 2rem; height:2rem;">1</button>
+    <button type="button" class="position-absolute top-0 left-50 translate-middle btn btn-sm btn-primary rounded-pill"
+      style="width: 2rem; height:2rem;">2</button>
+    <button type="button" class="position-absolute top-0 left-100 translate-middle btn btn-sm btn-secondary rounded-pill"
+      style="width: 2rem; height:2rem;">3</button>
+  </div>
+
+
+
+  <hr class="my-5" id="word-break">
+
+  <h3 class="pt-3">Word Break</h3>
+
+  <p class="text-break">
+    mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+
+  <style>
+    fieldset:disabled .form-control {
+      background-color: #e9ecef !important;
+    }
+
+    fieldset[aria-label^="Disabled"] .form-control,
+    fieldset[aria-label^="Disabled"] .form-select {
+      background-color: #e9ecef !important;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

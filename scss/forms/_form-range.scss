@@ -1,0 +1,48 @@
+.form-range:focus::-ms-thumb {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-range::-ms-thumb {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+  background-color: #0d6efd;
+  border: 0;
+  border-radius: 1rem;
+  transition:
+    background-color 0.15s ease-in-out, // stylelint-disable-line
+    border-color 0.15s ease-in-out, // stylelint-disable-line
+    box-shadow 0.15s ease-in-out;
+  appearance: none;
+}
+
+.form-range::-ms-thumb:active {
+  background-color: #bed8fe;
+}
+
+.form-range::-ms-track {
+  width: 100%;
+  height: 0.5rem;
+  color: transparent;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 0.5rem;
+}
+
+.form-range::-ms-fill-lower {
+  background-color: #dee2e6;
+  border-radius: 1rem;
+}
+
+.form-range::-ms-fill-upper {
+  margin-right: 15px;
+  background-color: #dee2e6;
+  border-radius: 1rem;
+}
+
+.form-range:disabled::-ms-thumb {
+  background-color: #adb5bd;
+}
