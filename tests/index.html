@@ -11,7 +11,8 @@
 
   <script nomodule crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"></script>
   <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script><script>!function () { var e, t; ((e = document.createEvent("CustomEvent")).initEvent("Bootstrap", !0, !0), e.preventDefault(), e.defaultPrevented) || (t = Event.prototype.preventDefault, Event.prototype.preventDefault = function () { this.cancelable && (t.call(this), Object.defineProperty(this, "defaultPrevented", { get: function () { return !0 }, configurable: !0 })) }) }();<\/script>');</script>
-  <script nomodule src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
   <meta property="og:image"
     content="https://repository-images.githubusercontent.com/171514859/420fd400-c07d-11ea-90cb-58dfe1d8a3f3">
@@ -24,18 +25,17 @@
     .container {
       max-width: 898px;
     }
-  </style>
-    <style>
-      fieldset:disabled .form-control {
-        background-color: #e9ecef !important;
-      }
 
-      /* stylelint-disable */
-      fieldset[aria-label^="Disabled"] .form-control,
-      fieldset[aria-label^="Disabled"] .form-select {
-        background-color: #e9ecef !important;
-      }
-    </style>
+    fieldset:disabled .form-control {
+      background-color: #e9ecef !important;
+    }
+
+    /* stylelint-disable */
+    fieldset[aria-label^="Disabled"] .form-control,
+    fieldset[aria-label^="Disabled"] .form-select {
+      background-color: #e9ecef !important;
+    }
+  </style>
 </head>
 
 <body class="container mb-5">
@@ -65,6 +65,7 @@
               <li><a class="dropdown-item" href="#close-button">Close button</a></li>
               <li><a class="dropdown-item" href="#dropdown">Dropdown</a></li>
               <li><a class="dropdown-item" href="#modal">Modal</a></li>
+              <li><a class="dropdown-item" href="#popovers">Popovers</a></li>
               <li><a class="dropdown-item" href="#progress">Progress</a></li>
               <li><a class="dropdown-item" href="#tooltips">Tooltips</a></li>
               <li>
@@ -295,6 +296,36 @@
     </div>
   </div>
 
+  <hr class="my-5" id="popovers">
+
+  <h3 class="pt-3">Popovers</h3>
+
+  <button type="button" class="btn btn-danger mb-5" data-toggle="popover" title="Popover title"
+    data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+  <p>
+    <button type="button" class="btn btn-secondary mr-4" data-container="body" data-toggle="popover" data-placement="top"
+      data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on top
+    </button>
+
+    <button type="button" class="btn btn-secondary mr-4" data-container="body" data-toggle="popover"
+      data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on right
+    </button>
+
+    <button type="button" class="btn btn-secondary mr-4" data-container="body" data-toggle="popover"
+      data-placement="bottom" data-content="Vivamus
+                        sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on bottom
+    </button>
+
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left"
+      data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on left
+    </button>
+  </p>
+
   <hr class="my-5" id="progress">
 
   <h3 class="pt-3">Progress</h3>
@@ -325,7 +356,8 @@
 
   <script>
     $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover"]').popover();
     });
   </script>
 
@@ -634,8 +666,6 @@
       class="position-absolute top-0 left-100 translate-middle btn btn-sm btn-secondary rounded-pill"
       style="width: 2rem; height: 2rem;">3</button>
   </div>
-
-
 
   <hr class="my-5" id="word-break">
 
