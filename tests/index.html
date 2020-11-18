@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap 5 - IE11 Test</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/bootstrap-ie11.min.css"
+  <link rel="stylesheet" href="../css/bootstrap-ie11.css"
     media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 
   <script nomodule crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"></script>
-  <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script><script>!function () { var e, t; ((e = document.createEvent("CustomEvent")).initEvent("Bootstrap", !0, !0), e.preventDefault(), e.defaultPrevented) || (t = Event.prototype.preventDefault, Event.prototype.preventDefault = function () { this.cancelable && (t.call(this), Object.defineProperty(this, "defaultPrevented", { get: function () { return !0 }, configurable: !0 })) }) }();<\/script>');</script>
+  <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.xjs"><\/script><script>!function () { var e, t; ((e = document.createEvent("CustomEvent")).initEvent("Bootstrap", !0, !0), e.preventDefault(), e.defaultPrevented) || (t = Event.prototype.preventDefault, Event.prototype.preventDefault = function () { this.cancelable && (t.call(this), Object.defineProperty(this, "defaultPrevented", { get: function () { return !0 }, configurable: !0 })) }) }();<\/script>');</script>
   <script nomodule src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
   <style>
@@ -22,6 +22,17 @@
       max-width: 898px;
     }
   </style>
+    <style>
+      fieldset:disabled .form-control {
+        background-color: #e9ecef !important;
+      }
+
+      /* stylelint-disable */
+      fieldset[aria-label^="Disabled"] .form-control,
+      fieldset[aria-label^="Disabled"] .form-select {
+        background-color: #e9ecef !important;
+      }
+    </style>
 </head>
 
 <body class="container mb-5">
@@ -199,7 +210,7 @@
 
   <h3 class="pt-3">Dark Carousel</h3>
 
-  <div class="carousel carousel-dark slide border border-light bg-light" data-ride="carousel" id="carousel">
+  <div class="carousel carousel-dark slide border bg-light" data-ride="carousel" id="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carousel" data-slide-to="0" class="active"></li>
       <li data-target="#carousel" data-slide-to="1"></li>
@@ -294,13 +305,14 @@
 
   <h3 class="py-3">Tooltips</h3>
 
-  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+  <button type="button" class="btn btn-secondary mr-3" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
     Tooltip on top
   </button>
-  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+  <button type="button" class="btn btn-secondary mr-3" data-toggle="tooltip" data-placement="right"
+    title="Tooltip on right">
     Tooltip on right
   </button>
-  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
+  <button type="button" class="btn btn-secondary mr-3" data-toggle="tooltip" data-placement="bottom"
     title="Tooltip on bottom">
     Tooltip on bottom
   </button>
@@ -545,16 +557,16 @@
 
   <div>
 
-    <div class="d-inline-block ratio ratio-1x1" style="width:10rem">
+    <div class="d-inline-block ratio ratio-1x1" style="width: 10rem;">
       <div class="d-flex align-items-center justify-content-center bg-light border">1x1</div>
     </div>
-    <div class="d-inline-block ratio ratio-4x3" style="width:10rem">
+    <div class="d-inline-block ratio ratio-4x3" style="width: 10rem;">
       <div class="d-flex align-items-center justify-content-center bg-light border">4x3</div>
     </div>
-    <div class="d-inline-block ratio ratio-16x9" style="width:10rem">
+    <div class="d-inline-block ratio ratio-16x9" style="width: 10rem;">
       <div class="d-flex align-items-center justify-content-center bg-light border">16x9</div>
     </div>
-    <div class="d-inline-block ratio ratio-21x9" style="width:10rem">
+    <div class="d-inline-block ratio ratio-21x9" style="width: 10rem;">
       <div class="d-flex align-items-center justify-content-center bg-light border">21x9</div>
     </div>
 
@@ -592,7 +604,7 @@
 
     <button type="button" class="btn btn-dark position-relative mr-3">
       Marker <svg width="1em" height="1em" viewBox="0 0 16 16"
-        class="position-absolute top-100 left-50 translate-middle mt-1 bi bi-caret-down-fill" fill="#343a40"
+        class="position-absolute top-100 left-50 translate-middle mt-1 bi bi-caret-down-fill" fill="#222"
         xmlns="http://www.w3.org/2000/svg">
         <path
           d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
@@ -612,12 +624,12 @@
         aria-valuemax="100"></div>
     </div>
     <button type="button" class="position-absolute top-0 left-0 translate-middle btn btn-sm btn-primary rounded-pill"
-      style="width: 2rem; height:2rem;">1</button>
+      style="width: 2rem; height: 2rem;">1</button>
     <button type="button" class="position-absolute top-0 left-50 translate-middle btn btn-sm btn-primary rounded-pill"
-      style="width: 2rem; height:2rem;">2</button>
+      style="width: 2rem; height: 2rem;">2</button>
     <button type="button"
       class="position-absolute top-0 left-100 translate-middle btn btn-sm btn-secondary rounded-pill"
-      style="width: 2rem; height:2rem;">3</button>
+      style="width: 2rem; height: 2rem;">3</button>
   </div>
 
 
@@ -628,17 +640,6 @@
 
   <p class="text-break">
     mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
-
-  <style>
-    fieldset:disabled .form-control {
-      background-color: #e9ecef !important;
-    }
-
-    fieldset[aria-label^="Disabled"] .form-control,
-    fieldset[aria-label^="Disabled"] .form-select {
-      background-color: #e9ecef !important;
-    }
-  </style>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 

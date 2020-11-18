@@ -5,7 +5,7 @@
 // makes the default checkbox icon nicer
 .form-check-input {
   border-color: #ccc;
-  box-shadow: 0 0 0 0.07rem rgba(111, 111, 111, 0.3);
+  box-shadow: 0 0 0.07rem 0.07rem rgba(111, 111, 111, 0.3);
 }
 
 // Hides the default caret
@@ -18,6 +18,11 @@ input::-ms-check {
 // Unstyle the caret on `<select>`s
 select::-ms-expand {
   display: none;
+}
+
+.form-check .form-check-input[type="radio"] {
+  margin-top: 0.27em;
+  margin-left: -1.4em;
 }
 
 //

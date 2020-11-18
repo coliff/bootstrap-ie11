@@ -1,4 +1,4 @@
-/* `pointer-events: none` isn't supported by IE11, setting `cursor: default` just makes it appear less like a link */
+// `pointer-events: none` isn't supported by IE11, setting `cursor: default` just makes it appear less like a link
 .pe-none {
   cursor: default;
 }
