@@ -82,6 +82,7 @@
               <li><a class="dropdown-item" href="#input-color">Input Color</a></li>
               <li><a class="dropdown-item" href="#input-group">Input Group</a></li>
               <li><a class="dropdown-item" href="#floating-labels">Floating Labels</a></li>
+              <li><a class="dropdown-item" href="#validation-tooltips">Validation - Tooltips</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -305,23 +306,22 @@
 
   <p>
     <button type="button" class="btn btn-secondary mr-4" data-container="body" data-toggle="popover" data-placement="top"
-      data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      data-content="Example content for popover on top">
       Popover on top
     </button>
 
     <button type="button" class="btn btn-secondary mr-4" data-container="body" data-toggle="popover"
-      data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      data-placement="right" data-content="Example content for popover on right">
       Popover on right
     </button>
 
     <button type="button" class="btn btn-secondary mr-4" data-container="body" data-toggle="popover"
-      data-placement="bottom" data-content="Vivamus
-                        sagittis lacus vel augue laoreet rutrum faucibus.">
+      data-placement="bottom" data-content="Example content for popover on bottom">
       Popover on bottom
     </button>
 
     <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left"
-      data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      data-content="Example content for popover on left">
       Popover on left
     </button>
   </p>
@@ -585,6 +585,88 @@
     </select>
     <label for="floatingSelect">Works with selects</label>
   </div>
+
+  <hr class="my-5" id="validation-tooltips">
+
+  <h3 class="pt-3">Validation - Tooltips</h3>
+
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltipUsername" class="form-label">Username</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+        <input type="text" class="form-control" id="validationTooltipUsername"
+          aria-describedby="validationTooltipUsernamePrepend" required>
+        <div class="invalid-tooltip">
+          Please choose a unique and valid username.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 position-relative">
+      <label for="validationTooltip03" class="form-label">City</label>
+      <input type="text" class="form-control" id="validationTooltip03" required>
+      <div class="invalid-tooltip">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 position-relative">
+      <label for="validationTooltip04" class="form-label">State</label>
+      <select class="form-select" id="validationTooltip04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+      <div class="invalid-tooltip">
+        Please select a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 position-relative">
+      <label for="validationTooltip05" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="validationTooltip05" required>
+      <div class="invalid-tooltip">
+        Please provide a valid zip.
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
 
   <hr class="my-5" id="aspect-ratio">
 
