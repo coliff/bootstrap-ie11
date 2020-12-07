@@ -5,12 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap 5 - IE11 Test</title>
+  <meta name="description" content="Bootstrap 5 for Internet Explorer 11 Test Page">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/bootstrap-ie11.css"
     media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 
   <script nomodule crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"></script>
-  <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script><script>!function () { var e, t; ((e = document.createEvent("CustomEvent")).initEvent("Bootstrap", !0, !0), e.preventDefault(), e.defaultPrevented) || (t = Event.prototype.preventDefault, Event.prototype.preventDefault = function () { this.cancelable && (t.call(this), Object.defineProperty(this, "defaultPrevented", { get: function () { return !0 }, configurable: !0 })) }) }();<\/script>');</script>
+  <script
+    nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script><script>!function () { var e, t; ((e = document.createEvent("CustomEvent")).initEvent("Bootstrap", !0, !0), e.preventDefault(), e.defaultPrevented) || (t = Event.prototype.preventDefault, Event.prototype.preventDefault = function () { this.cancelable && (t.call(this), Object.defineProperty(this, "defaultPrevented", { get: function () { return !0 }, configurable: !0 })) }) }();<\/script>');</script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
@@ -18,10 +20,6 @@
     content="https://repository-images.githubusercontent.com/171514859/420fd400-c07d-11ea-90cb-58dfe1d8a3f3">
   <link rel="author" href="https://christianoliff.com/">
   <style>
-    .dropdown-item {
-      font-size: 13px;
-    }
-
     .container {
       max-width: 898px;
     }
@@ -58,48 +56,48 @@
               <li>
                 <small class="ml-2 text-muted">Components</small>
               </li>
-              <li><a class="dropdown-item" href="#accordion">Accordion</a></li>
-              <li><a class="dropdown-item" href="#breadcrumb">Breadcrumb</a></li>
-              <li><a class="dropdown-item" href="#buttons">Buttons</a></li>
-              <li><a class="dropdown-item" href="#dark-carousel">Dark Carousel</a></li>
-              <li><a class="dropdown-item" href="#close-button">Close button</a></li>
-              <li><a class="dropdown-item" href="#dropdown">Dropdown</a></li>
-              <li><a class="dropdown-item" href="#modal">Modal</a></li>
-              <li><a class="dropdown-item" href="#popovers">Popovers</a></li>
-              <li><a class="dropdown-item" href="#progress">Progress</a></li>
-              <li><a class="dropdown-item" href="#tooltips">Tooltips</a></li>
+              <li><a class="dropdown-item small" href="#accordion">Accordion</a></li>
+              <li><a class="dropdown-item small" href="#breadcrumb">Breadcrumb</a></li>
+              <li><a class="dropdown-item small" href="#buttons">Buttons</a></li>
+              <li><a class="dropdown-item small" href="#dark-carousel">Dark Carousel</a></li>
+              <li><a class="dropdown-item small" href="#close-button">Close button</a></li>
+              <li><a class="dropdown-item small" href="#dropdown">Dropdown</a></li>
+              <li><a class="dropdown-item small" href="#modal">Modal</a></li>
+              <li><a class="dropdown-item small" href="#popovers">Popovers</a></li>
+              <li><a class="dropdown-item small" href="#progress">Progress</a></li>
+              <li><a class="dropdown-item small" href="#tooltips">Tooltips</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
               <li>
                 <small class="ml-2 text-muted">Forms</small>
               </li>
-              <li><a class="dropdown-item" href="#checks">Checks & Radios</a></li>
-              <li><a class="dropdown-item" href="#switches">Switches</a></li>
-              <li><a class="dropdown-item" href="#select">Select</a></li>
-              <li><a class="dropdown-item" href="#disabled-form">Disabled Form</a></li>
-              <li><a class="dropdown-item" href="#range">Range</a></li>
-              <li><a class="dropdown-item" href="#input-color">Input Color</a></li>
-              <li><a class="dropdown-item" href="#input-group">Input Group</a></li>
-              <li><a class="dropdown-item" href="#floating-labels">Floating Labels</a></li>
-              <li><a class="dropdown-item" href="#validation-tooltips">Validation - Tooltips</a></li>
+              <li><a class="dropdown-item small" href="#checks">Checks & Radios</a></li>
+              <li><a class="dropdown-item small" href="#switches">Switches</a></li>
+              <li><a class="dropdown-item small" href="#select">Select</a></li>
+              <li><a class="dropdown-item small" href="#disabled-form">Disabled Form</a></li>
+              <li><a class="dropdown-item small" href="#range">Range</a></li>
+              <li><a class="dropdown-item small" href="#input-color">Input Color</a></li>
+              <li><a class="dropdown-item small" href="#input-group">Input Group</a></li>
+              <li><a class="dropdown-item small" href="#floating-labels">Floating Labels</a></li>
+              <li><a class="dropdown-item small" href="#validation-tooltips">Validation - Tooltips</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
               <li>
                 <small class="ml-2 text-muted">Helpers</small>
               </li>
-              <li><a class="dropdown-item" href="#aspect-ratio">Ratio</a></li>
+              <li><a class="dropdown-item small" href="#aspect-ratio">Ratio</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
               <li>
                 <small class="ml-2 text-muted">Utilities</small>
               </li>
-              <li><a class="dropdown-item" href="#user-select">User Select</a></li>
-              <li><a class="dropdown-item" href="#pointer-events">Pointer events</a></li>
-              <li><a class="dropdown-item" href="#position">Position</a></li>
-              <li><a class="dropdown-item" href="#word-break">Word Break</a></li>
+              <li><a class="dropdown-item small" href="#user-select">User Select</a></li>
+              <li><a class="dropdown-item small" href="#pointer-events">Pointer events</a></li>
+              <li><a class="dropdown-item small" href="#position">Position</a></li>
+              <li><a class="dropdown-item small" href="#word-break">Word Break</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -224,7 +222,7 @@
       <div class="carousel-item active">
         <img class="d-block w-100" height="199" alt="">
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
+          <div class="h5">First slide label</div>
           <p></p>
         </div>
       </div>
@@ -720,7 +718,7 @@
     </button>
 
     <button type="button" class="btn btn-dark position-relative mr-3">
-      Marker <svg width="1em" height="1em" viewBox="0 0 16 16"
+      Marker <svg width="1em" height="1em"
         class="position-absolute top-100 left-50 translate-middle mt-1 bi bi-caret-down-fill" fill="#222"
         xmlns="http://www.w3.org/2000/svg">
         <path

@@ -263,6 +263,12 @@ input {
     right: 0.5px;
   }
 
+  .invalid-tooltip,
+.valid-tooltip {
+    left: 0;
+    margin-left: 8px;
+  }
+
   .ratio-1x1::before {
     padding-top: 100%;
   }

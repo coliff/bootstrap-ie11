@@ -21,3 +21,11 @@
 .bs-tooltip-auto[x-placement^="left"] .tooltip-arrow {
   right: 0.5px;
 }
+
+// fix for  form validation feedback not being positioned correctly
+// https://github.com/coliff/bootstrap-ie11/issues/29
+.invalid-tooltip,
+.valid-tooltip {
+  left: 0;
+  margin-left: 8px;
+}
