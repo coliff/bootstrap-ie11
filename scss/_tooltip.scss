@@ -1,27 +1,3 @@
-// fix for 1px gap on bottom placed tooltips
-.bs-tooltip-top .tooltip-arrow,
-.bs-tooltip-auto[x-placement^="top"] .tooltip-arrow {
-  bottom: 0.5px;
-}
-
-// fix for 1px gap on bottom placed tooltips
-.bs-tooltip-bottom .tooltip-arrow,
-.bs-tooltip-auto[x-placement^="bottom"] .tooltip-arrow {
-  top: 0.5px;
-}
-
-// fix for 1px gap on top placed tooltips
-.bs-tooltip-right .tooltip-arrow,
-.bs-tooltip-auto[x-placement^="right"] .tooltip-arrow {
-  left: 0.5px;
-}
-
-// fix for 1px gap on top placed tooltips
-.bs-tooltip-left .tooltip-arrow,
-.bs-tooltip-auto[x-placement^="left"] .tooltip-arrow {
-  right: 0.5px;
-}
-
 // fix for  form validation feedback not being positioned correctly
 // https://github.com/coliff/bootstrap-ie11/issues/29
 .invalid-tooltip,

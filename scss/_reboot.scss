@@ -1,6 +1,5 @@
 // Workaround for the SVG overflow bug.
 // See https://github.com/twbs/bootstrap/issues/26878
-
 svg {
   overflow: hidden;
 }
@@ -33,7 +32,6 @@ pre {
 }
 
 // Add the correct display for template & main
-
 template {
   display: none;
 }
