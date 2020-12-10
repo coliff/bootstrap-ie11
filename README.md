@@ -10,7 +10,7 @@
 [![NPM Version](https://img.shields.io/npm/v/bootstrap-ie11)](https://www.npmjs.com/package/bootstrap-ie11)
 [![jsdelivr](https://data.jsdelivr.com/v1/package/npm/bootstrap-ie11/badge)](https://www.jsdelivr.com/package/npm/bootstrap-ie11)
 
-Bootstrap 5 ([currently in Alpha](https://v5.getbootstrap.com/)) drops support for Internet Explorer 11, but you can add support back by simply adding a CSS file and a few JavaScript polyfills.
+Bootstrap 5 ([currently in Beta](https://getbootstrap.com/)) drops support for Internet Explorer 11, but you can add support back by simply adding a CSS file and a few JavaScript polyfills.
 
 ## Quick start
 
@@ -24,7 +24,7 @@ Bootstrap 5 ([currently in Alpha](https://v5.getbootstrap.com/)) drops support f
 Just add this in the `<head>` which will load the CSS and JS - just for IE users.
 
 ```html
-<script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="/css/bootstrap-ie11.min.css"><script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"><\/script><script>!function () { var e, t; ((e = document.createEvent("CustomEvent")).initEvent("Bootstrap", !0, !0), e.preventDefault(), e.defaultPrevented) || (t = Event.prototype.preventDefault, Event.prototype.preventDefault = function () { this.cancelable && (t.call(this), Object.defineProperty(this, "defaultPrevented", { get: function () { return !0 }, configurable: !0 })) }) }();<\/script>');</script>
+<script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="/css/bootstrap-ie11.min.css"><script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default,Array.prototype.includes,Array.prototype.find,Number.parseFloat%2CNumber.parse"><\/script>');</script>
 ```
 
 If you'd prefer to load the bootstrap-ie11 CSS without JavaScript you could use an IE-only media query as follow:
@@ -36,22 +36,26 @@ If you'd prefer to load the bootstrap-ie11 CSS without JavaScript you could use 
 The CSS can be loaded via a CDN:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.0.0-alpha3/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.0.0-beta1/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 ```
 
 ## FAQS
 
 ### What does this fix/polyfill?
 
-- Polyfill for CSS variables courtesy of [ie11CustomProperties](https://github.com/nuxodin/ie11CustomProperties)
+- Polyfill for CSS custom properties ([ie11CustomProperties](https://github.com/nuxodin/ie11CustomProperties))
+- Polyfill to fix all JavaScript components ([Polyfill.io](https://polyfill.io/v3/))
 - Workaround for the SVG overflow bug
 - Remove the default vertical scrollbar from `textarea`
+- Correct the text-wrapping and color inheritance for `legend`
+- Disable auto-hiding scrollbar to avoid overlap on `pre`
 - Fixes for card image size bug
+- Add the correct display values for `template` and `main`.
 - Fixes for modals (`.modal-dialog-centered` and `.modal-dialog-scrollable`)
 - Fixes for forms (inputs, checkboxes, radio buttons, switches, selects, ranges, placeholders and floating labels)
 - Fix for the `btn-close-white` SVG icon color
 - Fix for dark carousel previous and next SVG icon colors
-- Fix for 1px gap on tooltip arrows
+- Fix for `valid-tooltip` & `invalid-tooltip` positioning.
 - Adds vendor prefixes for `user-select-auto` and `user-select-none` utilities
 
 ### Any other things to look out for?
@@ -64,7 +68,7 @@ The CSS can be loaded via a CDN:
 ### How can I test this?
 
 - Microsoft offer free [Windows 7/8.1 VMs with IE11](https://developer.microsoft.com/microsoft-edge/tools/vms/)
-- [Browserstack](https://www.browserstack.com) also offers IE11 for testing
+- [BrowserStack](https://www.browserstack.com) also offers IE11 for testing
 
 ## Demo
 
