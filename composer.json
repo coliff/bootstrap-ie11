@@ -1,0 +1,19 @@
+{
+  "name": "coliff/bootstrap-ie11",
+  "description": "Bootstrap 5 for Internet Explorer 11",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christian Oliff",
+      "homepage": "https://christianoliff.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/coliff/bootstrap-ie11/issues",
+    "docs": "https://github.com/coliff/bootstrap-ie11#readme"
+  },
+  "require": {
+    "twbs/bootstrap": "5.0.0-beta1"
+  }
+}
