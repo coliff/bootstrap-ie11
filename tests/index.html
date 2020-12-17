@@ -36,6 +36,13 @@
     fieldset[aria-label^="Disabled"] .form-select {
       background-color: #e9ecef !important;
     }
+
+    .scrollspy-example {
+      position: relative;
+      height: 200px;
+      margin-top: .5rem;
+      overflow: auto;
+    }
   </style>
 </head>
 
@@ -71,6 +78,7 @@
               <li><a class="dropdown-item small" href="#modal">Modal</a></li>
               <li><a class="dropdown-item small" href="#popovers">Popovers</a></li>
               <li><a class="dropdown-item small" href="#progress">Progress</a></li>
+              <li><a class="dropdown-item small" href="#scrollspy">Scrollspy</a></li>
               <li><a class="dropdown-item small" href="#tooltips">Tooltips</a></li>
               <li>
                 <hr class="dropdown-divider">
@@ -272,16 +280,16 @@
 
   <hr class="my-5" id="carousel-dark">
 
-        <h3 class="pt-3">Carousel (Dark variant)</h3>
+  <h3 class="pt-3">Carousel (Dark variant)</h3>
 
-        <div class="carousel carousel-dark slide border bg-light" data-bs-ride="carousel" id="carouselDark">
-          <ol class="carousel-indicators">
-            <li data-bs-target="#carouselDark" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselDark" data-bs-slide-to="1"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" height="240" alt="">
+  <div class="carousel carousel-dark slide border bg-light" data-bs-ride="carousel" id="carouselDark">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselDark" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselDark" data-bs-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" height="240" alt="">
         <div class="carousel-caption d-none d-md-block">
           <div class="h5">First slide label</div>
           <p></p>
@@ -463,6 +471,92 @@
   <div class="progress">
     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
       aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+  </div>
+
+  <hr class="my-5" id="scrollspy">
+
+  <h3 class="py-3">Scrollspy</h3>
+
+  <div class="bd-example">
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#fat">@fat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#mdo">@mdo</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#one">one</a></li>
+            <li><a class="dropdown-item" href="#two">two</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#three">three</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example">
+      <h4 id="fat">@fat</h4>
+      <p>Ad leggings, brunch id art party dolor. Pitchfork yr lo-fi before they sold out qui.
+        Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh cardigan. Seitan
+        photo booth 3 wolf moon. Cosby sweater jean shorts, williamsburg hoodie minim qui you
+        probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil Pitchfork yr
+        lo-fi before they sold out qui.
+        Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh cardigan. Seitan
+        photo booth 3 wolf moon.
+        tattooed, cred irony biodiesel keffiyeh artisan.</p>
+      <h4 id="mdo">@mdo</h4>
+      <p>Ad leggings, brunch id art party dolor. Pitchfork yr lo-fi before they sold out qui.
+        Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh cardigan. Seitan
+        photo booth 3 wolf moon. Cosby sweater jean shorts, williamsburg hoodie minim qui you
+        probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil Pitchfork yr
+        lo-fi before they sold out qui.
+        Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh cardigan. Seitan
+        photo booth 3 wolf moon.
+        tattooed, cred irony biodiesel keffiyeh artisan..</p>
+      <h4 id="one">one</h4>
+      <p>Ad leggings, brunch id art party dolor. Pitchfork yr lo-fi before they sold out qui.
+        Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh cardigan. Seitan
+        photo booth 3 wolf moon. Cosby sweater jean shorts, williamsburg hoodie minim qui you
+        probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil Pitchfork yr
+        lo-fi before they sold out qui.
+        Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh cardigan. Seitan
+        photo booth 3 wolf moon.
+        tattooed, cred irony biodiesel keffiyeh artisan.</p>
+      <h4 id="two">two</h4>
+      <p>Ad leggings, brunch id art party dolor. Pitchfork yr lo-fi before they sold out qui.
+        Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh cardigan. Seitan
+        photo booth 3 wolf moon. Cosby sweater jean shorts, williamsburg hoodie minim qui you
+        probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil Pitchfork yr
+        lo-fi before they sold out qui.
+        Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh cardigan. Seitan
+        photo booth 3 wolf moon.
+        tattooed, cred irony biodiesel keffiyeh artisan.</p>
+      <h4 id="three">three</h4>
+      <p>Ad leggings, brunch id art party dolor. Pitchfork yr lo-fi before they sold out qui.
+        Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh cardigan. Seitan
+        photo booth 3 wolf moon. Cosby sweater jean shorts, williamsburg hoodie minim qui you
+        probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil Pitchfork yr
+        lo-fi before they sold out qui.
+        Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh cardigan. Seitan
+        photo booth 3 wolf moon.
+        tattooed, cred irony biodiesel keffiyeh artisan.</p>
+      <p>Ad leggings, brunch id art party dolor. Pitchfork yr lo-fi before they sold out qui.
+        Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh cardigan. Seitan
+        photo booth 3 wolf moon. Cosby sweater jean shorts, williamsburg hoodie minim qui you
+        probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil Pitchfork yr
+        lo-fi before they sold out qui.
+        Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh cardigan. Seitan
+        photo booth 3 wolf moon.
+        tattooed, cred irony biodiesel keffiyeh artisan.
+      </p>
+    </div>
   </div>
 
   <hr class="my-5" id="tooltips">
@@ -843,7 +937,8 @@
   <p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">This link</a> can not be clicked because the
     <code>pointer-events</code> property is inherited from its parent. However, <a href="#" class="pe-auto">this
       link</a>
-    has a <code>pe-auto</code> class and can be clicked.</p>
+    has a <code>pe-auto</code> class and can be clicked.
+    </p>
 
 
   <hr class="my-5" id="position">

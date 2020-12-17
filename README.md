@@ -15,7 +15,7 @@ Bootstrap 5 ([currently in Beta](https://getbootstrap.com/)) drops support for I
 ## Quick start
 
 - Download the [latest release](https://github.com/coliff/bootstrap-ie11)
-- Clone the repo git clone <https://github.com/coliff/bootstrap-ie11.git>
+- Clone the repo `git clone https://github.com/coliff/bootstrap-ie11.git`
 - Install with [npm](https://www.npmjs.com/package/bootstrap-ie11) `npm install bootstrap-ie11`
 - Install with [yarn](https://classic.yarnpkg.com/en/package/bootstrap-ie11) `yarn add bootstrap-ie11`
 
