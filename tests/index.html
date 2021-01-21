@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -12,7 +12,7 @@
 
   <!-- required JavaScript polyfills for IE11 -->
   <script nomodule crossorigin="anonymous"
-    src="https://polyfill.io/v3/polyfill.min.js?features=default,Array.prototype.includes,Array.prototype.find,Number.parseFloat%2CNumber.parse">
+    src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes">
     </script>
   <script
     nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>
@@ -70,6 +70,7 @@
               <li><a class="dropdown-item small" href="#alerts">Alerts</a></li>
               <li><a class="dropdown-item small" href="#breadcrumb">Breadcrumb</a></li>
               <li><a class="dropdown-item small" href="#buttons">Buttons</a></li>
+              <li><a class="dropdown-item small" href="#card">Card</a></li>
               <li><a class="dropdown-item small" href="#carousel">Carousel</a></li>
               <li><a class="dropdown-item small" href="#carousel-dark">Carousel (Dark Variant)</a></li>
               <li><a class="dropdown-item small" href="#close-button">Close button</a></li>
@@ -79,6 +80,7 @@
               <li><a class="dropdown-item small" href="#popovers">Popovers</a></li>
               <li><a class="dropdown-item small" href="#progress">Progress</a></li>
               <li><a class="dropdown-item small" href="#scrollspy">Scrollspy</a></li>
+              <li><a class="dropdown-item small" href="#toasts">Toasts</a></li>
               <li><a class="dropdown-item small" href="#tooltips">Tooltips</a></li>
               <li>
                 <hr class="dropdown-divider">
@@ -247,6 +249,87 @@
     <button type="button" class="btn btn-secondary" disabled>Disabled Button</button>
   </p>
 
+  <hr class="my-5" id="card">
+
+  <h3 class="pt-3">Card</h3>
+
+  <div>
+    <div class="bd-example">
+      <div class="row  row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="90" xmlns="http://www.w3.org/2000/svg"
+              role="img" focusable="false">
+              <rect width="100%" height="100%" fill="#868e96" />
+            </svg>
+
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">
+              2 days ago
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <svg class="bd-placeholder-img" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                  focusable="false">
+                  <rect width="100%" height="100%" fill="#868e96" />
+                </svg>
+
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <hr class="my-5" id="carousel">
 
   <h3 class="pt-3">Carousel</h3>
@@ -347,7 +430,7 @@
 
   <h3 class="pt-3">Dropdown</h3>
 
-  <div class="dropdown">
+  <div class="dropdown mb-4">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
       aria-expanded="false">
       Dropdown button
@@ -358,6 +441,57 @@
       <li><a class="dropdown-item" href="#">Something else here</a></li>
     </ul>
   </div>
+
+  <div class="dropup mb-4">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropupMenuButton" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      Dropup button
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropupMenuButton">
+      <li>
+        <h6 class="dropdown-header">Dropdown header</h6>
+      </li>
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+  <div class="dropend mb-4">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropendMenuButton" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      Dropend button
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropendMenuButton">
+      <li>
+        <h6 class="dropdown-header">Dropdown header</h6>
+      </li>
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div><!-- /btn-group -->
 
   <hr class="my-5" id="modal">
 
@@ -556,6 +690,30 @@
         photo booth 3 wolf moon.
         tattooed, cred irony biodiesel keffiyeh artisan.
       </p>
+    </div>
+  </div>
+
+  <hr class="my-5" id="toasts">
+
+  <h3 class="py-3">Toasts</h3>
+
+  <div>
+    <div class="bd-example bg-dark p-5 align-items-center">
+      <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" focusable="false">
+            <rect width="100%" height="100%" fill="#007aff" />
+          </svg>
+
+          <strong class="me-auto">Bootstrap</strong>
+          <small class="text-muted">11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hello, world! This is a toast message.
+        </div>
+      </div>
     </div>
   </div>
 
