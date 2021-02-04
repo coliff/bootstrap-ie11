@@ -33,6 +33,7 @@
     "css-compile": "sass --style expanded --source-map --embed-sources scss:css",
     "css-lint": "stylelint \"scss/*.scss\"",
     "css-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output css/bootstrap-ie11.min.css css/bootstrap-ie11.css",
+    "prettier": "npx prettier --write \"scss/*.scss\"",
     "test": "npm run css-lint"
   },
   "devDependencies": {

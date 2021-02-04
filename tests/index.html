@@ -80,6 +80,7 @@
               <li><a class="dropdown-item small" href="#popovers">Popovers</a></li>
               <li><a class="dropdown-item small" href="#progress">Progress</a></li>
               <li><a class="dropdown-item small" href="#scrollspy">Scrollspy</a></li>
+              <li><a class="dropdown-item small" href="#tabs">Tabs</a></li>
               <li><a class="dropdown-item small" href="#toasts">Toasts</a></li>
               <li><a class="dropdown-item small" href="#tooltips">Tooltips</a></li>
               <li>
@@ -173,8 +174,8 @@
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-          aria-expanded="false" aria-controls="collapseThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
           Accordion Item #3
         </button>
       </h2>
@@ -318,8 +319,8 @@
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
@@ -691,6 +692,48 @@
         tattooed, cred irony biodiesel keffiyeh artisan.
       </p>
     </div>
+  </div>
+
+  <hr class="my-5" id="tabs">
+
+  <h3 class="pt-3">Tabs</h3>
+
+  <p>Not working. <a href="https://github.com/coliff/bootstrap-ie11/issues/39" target="_blank">GitHub Issue #39</a></p>
+
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home"
+        aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+        aria-selected="false">Profile</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+        aria-selected="false">Contact</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Etsy mix-tape wayfarers,
+      ethical wes anderson tofu before they sold out organic retro fanny pack lo-fi farm-to-table
+      ready-made. Messenger bag gentrify pitchfork tattooed craft beer, skateboard locavore etsy salvia
+      hoodie helvetica. DIY synth PBR irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg
+      my whatever gluten-free, pitchfork biodiesel etsy retro vice blog. cred you
+      probably haven't heard of them, vinyl craft beer blog. Pitchfork sustainable tofu synth chambray yr.
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Etsy mix-tape wayfarers,
+      ethical wes anderson tofu before they sold out organic retro fanny pack lo-fi farm-to-table
+      ready-made. Messenger bag gentrify pitchfork tattooed craft beer, skateboard locavore etsy salvia
+      hoodie helvetica. DIY synth PBR irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg
+      my whatever gluten-free, pitchfork biodiesel etsy retro vice blog. cred you
+      probably haven't heard of them, vinyl craft beer blog. Pitchfork sustainable tofu synth chambray yr.</div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Etsy mix-tape wayfarers,
+      ethical wes anderson tofu before they sold out organic retro fanny pack lo-fi farm-to-table
+      ready-made. Messenger bag gentrify pitchfork tattooed craft beer, skateboard locavore etsy salvia
+      hoodie helvetica. DIY synth PBR irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg
+      my whatever gluten-free, pitchfork biodiesel etsy retro vice blog. cred you
+      probably haven't heard of them, vinyl craft beer blog. Pitchfork sustainable tofu synth chambray yr.</div>
   </div>
 
   <hr class="my-5" id="toasts">
@@ -1096,7 +1139,7 @@
     <code>pointer-events</code> property is inherited from its parent. However, <a href="#" class="pe-auto">this
       link</a>
     has a <code>pe-auto</code> class and can be clicked.
-    </p>
+  </p>
 
 
   <hr class="my-5" id="position">
