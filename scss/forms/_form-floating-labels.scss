@@ -7,6 +7,11 @@
   color: #6c757d;
 }
 
+.form-floating > .form-control:not(:-ms-input-placeholder) ~ label {
+  opacity: 0.65;
+  transform: scale(0.9) translateY(-0.01rem) translateX(0.15rem);
+}
+
 .form-floating input:-ms-input-placeholder,
 .form-floating select:-ms-input-placeholder,
 .form-floating textarea:-ms-input-placeholder {
@@ -23,6 +28,7 @@
 .form-floating textarea:not(:-ms-input-placeholder) ~ label {
   padding-top: .25rem;
   padding-bottom: .25rem;
-  font-size: 12px;
+  font-size: 14px;
   color: #777;
+  opacity: .65;
 }
