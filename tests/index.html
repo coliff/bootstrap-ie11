@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap 5 - IE11 Test</title>
   <meta name="description" content="Bootstrap 5 for Internet Explorer 11 Test Page">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/bootstrap-ie11.css"
     media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 
@@ -16,6 +16,10 @@
     </script>
   <script
     nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>
+
+  <!-- polyfill for tabs -->
+  <!-- https://github.com/coliff/bootstrap-ie11/issues/39 -->
+  <script nomodule src="https://cdn.jsdelivr.net/npm/element-qsa-scope@1.1.0/index.min.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
@@ -50,7 +54,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fixed-top mb-5">
     <div class="container">
-      <a class="navbar-brand" href="#">Bootstrap 5 for IE 11 <small class="text-muted small fs-6">beta-1</small></a>
+      <a class="navbar-brand" href="#">Bootstrap 5 for IE 11 <small class="text-muted small fs-6">beta-2</small></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -352,14 +356,14 @@
         </svg>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+    <button class="carousel-control-prev" data-bs-target="#carouselExampleIndicators" type="button" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+    </button>
+    <button class="carousel-control-next" data-bs-target="#carouselExampleIndicators" type="button" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
-    </a>
+    </button>
   </div>
 
   <hr class="my-5" id="carousel-dark">
@@ -387,14 +391,14 @@
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselDark" role="button" data-bs-slide="prev">
+    <button class="carousel-control-prev" data-bs-target="#carouselDark" type="button" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselDark" role="button" data-bs-slide="next">
+    </button>
+    <button class="carousel-control-next" data-bs-target="#carouselDark" type="button" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
-    </a>
+    </button>
   </div>
 
   <hr class="my-5" id="close-button">
@@ -698,7 +702,7 @@
 
   <h3 class="pt-3">Tabs</h3>
 
-  <p>Not working. <a href="https://github.com/coliff/bootstrap-ie11/issues/39" target="_blank">GitHub Issue #39</a></p>
+  <p>Note: Requires <a href="https://www.npmjs.com/package/element-qsa-scope" target="_blank">element-qsa-scope</a> polyfill. See <a href="https://github.com/coliff/bootstrap-ie11/issues/39" target="_blank">GitHub Issue #39</a></p>
 
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
@@ -1146,9 +1150,11 @@
 
   <h3 class="pt-3">Position</h3>
 
+  <span class="visually-hidden">unread messages</span>
+
   <div class="py-3 clearfix">
     <button type="button" class="btn btn-primary position-relative me-3">
-      Mails <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-secondary">+99 <span
+      Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99 <span
           class="visually-hidden">unread messages</span></span>
     </button>
 
@@ -1189,7 +1195,7 @@
   <p class="text-break">
     mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

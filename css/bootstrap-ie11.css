@@ -1,6 +1,6 @@
 /*!
- * Bootstrap for IE11 v5.0.0-beta1 (https://github.com/coliff/bootstrap-ie11)
- * Copyright 2020 C.Oliff
+ * Bootstrap for IE11 v5.0.0-beta2 (https://github.com/coliff/bootstrap-ie11)
+ * Copyright 2021 C.Oliff
  * Licensed under MIT (https://github.com/coliff/bootstrap-ie11/blob/main/LICENSE)
  */
 @media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -52,6 +52,19 @@ input {
 
   .user-select-auto {
     -ms-user-select: auto !important;
+  }
+
+  .visually-hidden,
+.visually-hidden-focusable:not(:focus) {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
   }
 
   .breadcrumb-item {
