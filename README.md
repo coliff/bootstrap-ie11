@@ -18,7 +18,7 @@ Bootstrap 5 ([currently in Beta](https://getbootstrap.com/)) drops support for I
 - Clone the repo `git clone https://github.com/coliff/bootstrap-ie11.git`
 - Install with [npm](https://www.npmjs.com/package/bootstrap-ie11) `npm install bootstrap-ie11`
 - Install with [yarn](https://classic.yarnpkg.com/en/package/bootstrap-ie11) `yarn add bootstrap-ie11`
-- Install with [Composer](https://packagist.org/packages/coliff/bootstrap-ie11) `composer require coliff/bootstrap-ie11:5.0.0-beta1`
+- Install with [Composer](https://packagist.org/packages/coliff/bootstrap-ie11) `composer require coliff/bootstrap-ie11:5.0.0-beta2`
 
 ## Usage
 
@@ -37,7 +37,7 @@ If you'd prefer to load the bootstrap-ie11 CSS without JavaScript you could use 
 The CSS can be loaded via a CDN:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.0.0-beta1/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.0.0-beta2/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 ```
 
 ## FAQS
@@ -56,13 +56,15 @@ The CSS can be loaded via a CDN:
 - Fixes for forms (inputs, checkboxes, radio buttons, switches, selects, ranges, placeholders and floating labels)
 - Fix for the `btn-close-white` SVG icon color
 - Fix for dark carousel previous and next SVG icon colors
-- Fix for `valid-tooltip` & `invalid-tooltip` positioning.
+- Fix for `valid-tooltip` & `invalid-tooltip` positioning
 - Adds vendor prefixes for `user-select-auto` and `user-select-none` utilities
+- Fix for `.visually-hidden` utility class
 
 ### Any other things to look out for?
 
+- Tabs require an additional [element-qsa-scope polyfill](https://www.npmjs.com/package/element-qsa-scope). Check [Issue #39](https://github.com/coliff/bootstrap-ie11/issues/39).
 - Internet Explorer 11 does not support vertical alignment of flex items when the flex container has a `min-height`. [See Flexbugs #3 for more details.](https://github.com/philipwalton/flexbugs#flexbug-3)
-- The ie11CustomProperties polyfill currently removes the `!important` from any CSS variables with that set [https://github.com/nuxodin/ie11CustomProperties/issues/62](https://github.com/nuxodin/ie11CustomProperties/issues/62).
+- The ie11CustomProperties polyfill currently removes the `!important` from any CSS variables with that set. See [ie11CustomProperties issue #62](https://github.com/nuxodin/ie11CustomProperties/issues/62).
 - View a list of known issues at [https://github.com/coliff/bootstrap-ie11/issues](https://github.com/coliff/bootstrap-ie11/issues)
 - There is a slight delay before the ie11CustomProperties polyfill works its magic. Consider adding `body{font-family:"Segoe UI", Arial, sans-serif;}` to your IE11-only stylesheet so there isn't a delay in the text displaying
 
