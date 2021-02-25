@@ -1,0 +1,15 @@
+.table > :not(caption) > * > * {
+  box-shadow: none !important;
+}
+
+.table.table-striped:not(.table-dark) > tbody > tr:nth-child(odd) > * {
+  background-color: #f2f2f2 !important;
+}
+
+.table-dark.table-striped > :not(caption) > *:nth-child(odd) > * {
+  opacity: 0.9;
+}
+
+.table-dark.table-striped > thead > tr > th {
+  opacity: 1 !important;
+}

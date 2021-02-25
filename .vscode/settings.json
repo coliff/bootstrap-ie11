@@ -1,0 +1,6 @@
+{
+  "css.lint.ieHack": "warning",
+  "html.format.endWithNewline": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true
+}
