@@ -6,6 +6,7 @@
 
 @media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   @import "reboot";
+  @import "tables";
   @import "utilities";
   @import "breadcrumb";
   @import "buttons";

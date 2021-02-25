@@ -5,6 +5,8 @@
       "declaration-no-important": null,
       "number-leading-zero": null,
       "property-no-vendor-prefix": null,
+      "selector-max-type": null,
+      "selector-max-universal": null,
       "selector-no-vendor-prefix": null,
     },
 }
