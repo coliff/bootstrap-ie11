@@ -1,7 +1,6 @@
 {
   "name": "bootstrap-ie11",
   "version": "5.0.0-beta2",
-  "version_short": "5.0",
   "description": "Bootstrap 5 for Internet Explorer 11",
   "keywords": [
     "bootstrap",
@@ -17,6 +16,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coliff/bootstrap-ie11.git"
+  },
+  "funding": {
+    "type": "PayPal",
+    "url": "paypal.me/coliff"
   },
   "license": "MIT",
   "author": "Christian Oliff (https://christianoliff.com)",
@@ -36,11 +39,14 @@
     "prettier": "npx prettier --write \"scss/*.scss\"",
     "test": "npm run css-lint"
   },
+  "config": {
+    "version_short": "5.0"
+  },
   "devDependencies": {
     "clean-css-cli": "4.3.0",
     "npm-run-all": "^4.1.5",
     "sass": "^1.32.8",
-    "stylelint": "^13.11.0",
+    "stylelint": "^13.12.0",
     "stylelint-config-twbs-bootstrap": "^2.1.0"
   },
   "sass": "scss/bootstrap-ie11.scss"
