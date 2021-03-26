@@ -48,6 +48,7 @@
       margin-top: .5rem;
       overflow: auto;
     }
+
   </style>
 </head>
 
@@ -70,6 +71,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownContent">
               <li><a class="dropdown-item small" href="#typography">Typography</a></li>
+              <li><a class="dropdown-item small" href="#images">Images</a></li>
               <li><a class="dropdown-item small" href="#tables">Tables</a></li>
               <li><a class="dropdown-item small" href="#figures">Figures</a></li>
             </ul>
@@ -89,8 +91,9 @@
               <li><a class="dropdown-item small" href="#carousel-dark">Carousel (Dark Variant)</a></li>
               <li><a class="dropdown-item small" href="#close-button">Close button</a></li>
               <li><a class="dropdown-item small" href="#collapse">Collapse</a></li>
-              <li><a class="dropdown-item small" href="#dropdown">Dropdown</a></li>
+              <li><a class="dropdown-item small" href="#dropdowns">Dropdowns</a></li>
               <li><a class="dropdown-item small" href="#modal">Modal</a></li>
+              <li><a class="dropdown-item small" href="#offcanvas">Offcanvas</a></li>
               <li><a class="dropdown-item small" href="#popovers">Popovers</a></li>
               <li><a class="dropdown-item small" href="#progress">Progress</a></li>
               <li><a class="dropdown-item small" href="#scrollspy">Scrollspy</a></li>
@@ -159,6 +162,29 @@
   <h4>h4. Bootstrap heading</h4>
   <h5>h5. Bootstrap heading</h5>
   <h6>h6. Bootstrap heading</h6>
+
+  <h6 class="mt-5">Inline text elements</h6>
+
+  <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+  <p><del>This line of text is meant to be treated as deleted text.</del></p>
+  <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+  <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+  <p><u>This line of text will render as underlined.</u></p>
+  <p><small>This line of text is meant to be treated as fine print.</small></p>
+  <p><strong>This line rendered as bold text.</strong></p>
+  <p><em>This line rendered as italicized text.</em></p>
+
+  <hr id="images" class="my-5">
+
+  <h3 class="pt-3">Images</h3>
+
+  <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="250"
+    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Responsive image"
+    preserveAspectRatio="xMidYMid slice" focusable="false">
+    <title>Placeholder</title>
+    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Responsive
+      image</text>
+  </svg>
 
   <hr id="tables" class="my-5">
 
@@ -382,8 +408,8 @@
 
   <h3 class="pt-3">Figures</h3>
 
-<p>Note: Images in a figure container may overflow the content area. See <a
-    href="https://github.com/coliff/bootstrap-ie11/issues/52" target="_blank">GitHub Issue #52</a></p>
+  <p>Note: Images in a figure container may overflow the content area. See <a
+      href="https://github.com/coliff/bootstrap-ie11/issues/52" target="_blank">GitHub Issue #52</a></p>
 
   <figure class="figure">
     <svg class="figure-img img-fluid rounded" width="900" height="150" xmlns="http://www.w3.org/2000/svg" role="img"
@@ -713,9 +739,9 @@
     </div>
   </div>
 
-  <hr class="my-5" id="dropdown">
+  <hr class="my-5" id="dropdowns">
 
-  <h3 class="pt-3">Dropdown</h3>
+  <h3 class="pt-3">Dropdowns</h3>
 
   <div class="dropdown mb-4">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
@@ -852,6 +878,47 @@
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Understood</button>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="my-5" id="offcanvas">
+
+  <h3 class="pt-3">Offcanvas</h3>
+
+  <p>Note: Offcanvas is not working on IE11. See <a href="https://github.com/coliff/bootstrap-ie11/issues/57"
+      target="_blank">GitHub Issue #39</a>
+  </p>
+
+  <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+    aria-controls="offcanvasExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+    aria-controls="offcanvasExample">
+    Button with data-bs-target
+  </button>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
+        etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="offcanvasdropdownMenuButton"
+          data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="offcanvasdropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
       </div>
     </div>
   </div>
