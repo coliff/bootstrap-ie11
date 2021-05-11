@@ -13,7 +13,13 @@
     "issues": "https://github.com/coliff/bootstrap-ie11/issues",
     "docs": "https://github.com/coliff/bootstrap-ie11#readme"
   },
+  "funding": [
+    {
+      "type": "PayPal",
+      "url": "https://paypal.me/coliff"
+    }
+  ],
   "require": {
-    "twbs/bootstrap": "5.0.0-beta3"
+    "twbs/bootstrap": "5.0.0"
   }
 }
