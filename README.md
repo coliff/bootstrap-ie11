@@ -10,7 +10,7 @@
 [![NPM Version](https://img.shields.io/npm/v/bootstrap-ie11)](https://www.npmjs.com/package/bootstrap-ie11)
 [![jsdelivr](https://data.jsdelivr.com/v1/package/npm/bootstrap-ie11/badge)](https://www.jsdelivr.com/package/npm/bootstrap-ie11)
 
-([Bootstrap 5](https://getbootstrap.com/)) drops support for Internet Explorer 11, but you can add support back by simply adding a CSS file and a few JavaScript polyfills.
+[Bootstrap 5](https://getbootstrap.com/) drops support for Internet Explorer 11, but you can add support back by simply adding a CSS file and a few JavaScript polyfills.
 
 ## Quick start
 
