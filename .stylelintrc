@@ -3,6 +3,7 @@
   "rules":
     {
       "declaration-no-important": null,
+      "no-invalid-position-at-import-rule": null,
       "number-leading-zero": null,
       "property-no-vendor-prefix": null,
       "selector-max-type": null,
