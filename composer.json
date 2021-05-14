@@ -18,8 +18,5 @@
       "type": "PayPal",
       "url": "https://paypal.me/coliff"
     }
-  ],
-  "require": {
-    "twbs/bootstrap": "5.0.0"
-  }
+  ]
 }
