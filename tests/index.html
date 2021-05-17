@@ -110,7 +110,8 @@
               Helpers
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownHelpers">
-              <li><a class="dropdown-item small" href="#aspect-ratio">Ratio</a></li>
+              <li><a class="dropdown-item small" href="#clearfix">Clearfix</a></li>
+              <li><a class="dropdown-item small" href="#ratio">Ratio</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -119,10 +120,9 @@
               Utilities
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownUtilities">
-              <li><a class="dropdown-item small" href="#user-select">User Select</a></li>
-              <li><a class="dropdown-item small" href="#pointer-events">Pointer events</a></li>
+              <li><a class="dropdown-item small" href="#interactions">Interactions</a></li>
               <li><a class="dropdown-item small" href="#position">Position</a></li>
-              <li><a class="dropdown-item small" href="#word-break">Word Break</a></li>
+              <li><a class="dropdown-item small" href="#text">Text</a></li>
             </ul>
           </li>
 
@@ -1317,7 +1317,7 @@
     <option value="2">Two</option>
   </select>
 
-  <h5 class="mt-2">Disabled Input</h5>
+  <h5 class="mt-3">Disabled Input</h5>
 
   <input class="form-control mb-2" type="text" placeholder="Disabled input" aria-label="Disabled input example"
     disabled>
@@ -1328,17 +1328,17 @@
 
   <form>
     <fieldset disabled aria-label="Disabled fieldset example">
-      <div class="mb-3">
+      <div class="my-2">
         <label for="disabledTextInput" class="form-label">Disabled input</label>
         <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
       </div>
-      <div class="mb-3">
+      <div class="my-2">
         <label for="disabledSelect" class="form-label">Disabled select menu</label>
         <select id="disabledSelect" class="form-select">
           <option>Disabled select</option>
         </select>
       </div>
-      <div class="mb-3">
+      <div class="my-2">
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
           <label class="form-check-label" for="disabledFieldsetCheck">
@@ -1349,6 +1349,11 @@
       <button type="submit" class="btn btn-primary">Submit</button>
     </fieldset>
   </form>
+
+  <h5 class="mt-3">Read Only</h5>
+
+  <input class="form-control" type="text" placeholder="Readonly input here..." aria-label="readonly input example"
+    readonly>
 
   <hr class="my-5" id="range">
 
@@ -1523,9 +1528,9 @@
     })();
   </script>
 
-  <hr class="my-5" id="aspect-ratio">
+  <hr class="my-5" id="ratio">
 
-  <h3 class="pt-3">Aspect Ratio</h3>
+  <h3 class="pt-3">Ratio</h3>
 
   <div>
 
@@ -1544,17 +1549,17 @@
 
   </div>
 
-  <hr class="my-5" id="user-select">
+  <hr class="my-5" id="interactions">
 
   <h3 class="pt-3">Interactions</h3>
+
+  <h5 class="pt-3">Text Selection</h5>
 
   <p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
   <p class="user-select-auto">This paragraph has default select behavior.</p>
   <p class="user-select-none">This paragraph will not be selectable when clicked by the user.</p>
 
-  <hr class="my-5" id="pointer-events">
-
-  <h3 class="pt-3">Pointer events</h3>
+  <h5 class="pt-3">Pointer events</h5>
 
   <p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">This link</a> can not be clicked.</p>
   <p><a href="#" class="pe-auto">This link</a> can be clicked (this is default behaviour).</p>
@@ -1564,6 +1569,15 @@
     has a <code>pe-auto</code> class and can be clicked.
   </p>
 
+  <hr class="my-5" id="clearfix">
+
+  <h3 class="pt-3">Clearfix</h3>
+
+
+  <div class="bg-info clearfix">
+    <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
+    <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
+  </div>
 
   <hr class="my-5" id="position">
 
@@ -1607,9 +1621,21 @@
       style="width: 2rem; height: 2rem;">3</button>
   </div>
 
-  <hr class="my-5" id="word-break">
+  <hr class="my-5" id="text">
 
-  <h3 class="pt-3">Word Break</h3>
+  <h3 class="pt-3">Text</h3>
+
+  <h5 class="pt-3">Text wrapping and overflow</h5>
+
+  <div class="badge bg-primary text-wrap my-2" style="width: 6rem;">
+    This text should wrap.
+  </div>
+
+  <div class="text-nowrap bd-highlight my-2" style="width: 8rem;">
+    This text should overflow the parent.
+  </div>
+
+  <h5 class="pt-3">Word Break</h5>
 
   <p class="text-break">
     mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
