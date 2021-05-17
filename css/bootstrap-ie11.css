@@ -176,6 +176,10 @@ input {
     max-width: 5rem;
   }
 
+  .form-control:disabled {
+    -ms-user-select: none !important;
+  }
+
   .form-floating {
     display: flex;
     flex-direction: column-reverse;

@@ -8,3 +8,7 @@
 .form-control-color {
   max-width: 5rem;
 }
+
+.form-control:disabled {
+  -ms-user-select: none !important;
+}
