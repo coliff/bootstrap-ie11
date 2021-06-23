@@ -18,7 +18,7 @@
 - Clone the repo `git clone https://github.com/coliff/bootstrap-ie11.git`
 - Install with [npm](https://www.npmjs.com/package/bootstrap-ie11) `npm install bootstrap-ie11`
 - Install with [yarn](https://classic.yarnpkg.com/en/package/bootstrap-ie11) `yarn add bootstrap-ie11`
-- Install with [Composer](https://packagist.org/packages/coliff/bootstrap-ie11) `composer require coliff/bootstrap-ie11:5.0.1`
+- Install with [Composer](https://packagist.org/packages/coliff/bootstrap-ie11) `composer require coliff/bootstrap-ie11:5.0.2`
 
 ## Usage
 
