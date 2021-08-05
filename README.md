@@ -49,6 +49,7 @@ The CSS can be loaded via a CDN:
 - Correct the text-wrapping and color inheritance for `legend`
 - Disable auto-hiding scrollbar to avoid overlap on `pre`
 - Fixes for card image size bug
+- Fixes for text color and text opacity utlility classes
 - Add the correct display values for `template` and `main`
 - Fixes for modals (`.modal-dialog-centered` and `.modal-dialog-scrollable`)
 - Fixes for forms (inputs, checkboxes, radio buttons, switches, selects, ranges, placeholders and floating labels)
@@ -60,7 +61,7 @@ The CSS can be loaded via a CDN:
 - Bootstrap 5 Beta 2 is loaded via CDN (The JavaScript in Bootstrap 5 Beta 3 and later is incompatible)
 - Polyfill for CSS custom properties ([ie11CustomProperties](https://github.com/nuxodin/ie11CustomProperties))
 - Polyfill to fix most JavaScript components ([Polyfill.io](https://polyfill.io/v3/))
-- Plyfill to fix tabs ([element-qsa-scope polyfill](https://www.npmjs.com/package/element-qsa-scope))
+- Polyfill to fix tabs ([element-qsa-scope polyfill](https://www.npmjs.com/package/element-qsa-scope))
 
 ### Known Issues
 
