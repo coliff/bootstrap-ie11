@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap 5 - IE11 Test</title>
   <meta name="description" content="Bootstrap 5 for Internet Explorer 11 Test Page">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/bootstrap-ie11.css"
     media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 
@@ -40,7 +40,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fixed-top mb-5">
     <div class="container">
-      <a class="navbar-brand" href="#">Bootstrap 5 for IE 11 <small class="text-muted small fs-6">5.0.2</small></a>
+      <a class="navbar-brand" href="#">Bootstrap 5 for IE 11 <small class="text-muted small fs-6">5.1.0</small></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -70,15 +70,16 @@
               <li><a class="dropdown-item small" href="#alerts">Alerts</a></li>
               <li><a class="dropdown-item small" href="#breadcrumb">Breadcrumb</a></li>
               <li><a class="dropdown-item small" href="#buttons">Buttons</a></li>
+              <li><a class="dropdown-item small" href="#button-group">Button group</a></li>
               <li><a class="dropdown-item small" href="#card">Card</a></li>
               <li><a class="dropdown-item small" href="#carousel">Carousel</a></li>
-              <li><a class="dropdown-item small" href="#carousel-dark">Carousel (Dark Variant)</a></li>
               <li><a class="dropdown-item small" href="#close-button">Close button</a></li>
               <li><a class="dropdown-item small" href="#collapse">Collapse</a></li>
               <li><a class="dropdown-item small" href="#dropdowns">Dropdowns</a></li>
               <li><a class="dropdown-item small" href="#modal">Modal</a></li>
               <li><a class="dropdown-item small" href="#navbar">Navbar</a></li>
               <li><a class="dropdown-item small" href="#offcanvas">Offcanvas</a></li>
+              <li><a class="dropdown-item small" href="#placeholders">Placeholders</a></li>
               <li><a class="dropdown-item small" href="#popovers">Popovers</a></li>
               <li><a class="dropdown-item small" href="#progress">Progress</a></li>
               <li><a class="dropdown-item small" href="#scrollspy">Scrollspy</a></li>
@@ -112,7 +113,9 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownHelpers">
               <li><a class="dropdown-item small" href="#clearfix">Clearfix</a></li>
+              <li><a class="dropdown-item small" href="#colored-links">Colored links</a></li>
               <li><a class="dropdown-item small" href="#ratio">Ratio</a></li>
+              <li><a class="dropdown-item small" href="#stacks">Stacks</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -121,7 +124,10 @@
               Utilities
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownUtilities">
+              <li><a class="dropdown-item small" href="#background">Background</a></li>
+              <li><a class="dropdown-item small" href="#text-colors">Colors</a></li>
               <li><a class="dropdown-item small" href="#interactions">Interactions</a></li>
+              <li><a class="dropdown-item small" href="#opacity">Opacity</a></li>
               <li><a class="dropdown-item small" href="#position">Position</a></li>
               <li><a class="dropdown-item small" href="#text">Text</a></li>
             </ul>
@@ -394,12 +400,13 @@
 
   <h3 class="pt-3">Figures</h3>
 
-  <p>Note: Images in a figure container may overflow the content area. See <a
-      href="https://github.com/coliff/bootstrap-ie11/issues/52" target="_blank">GitHub Issue #52</a></p>
+  <div class="alert alert-sm alert-danger bg-white p-2" role="alert">
+    Note: Images in a figure container may overflow the content area. See <a
+      href="https://github.com/coliff/bootstrap-ie11/issues/52" target="_blank">GitHub Issue #52</a></div>
 
   <figure class="figure">
-    <svg class="figure-img img-fluid rounded" width="900" height="150" xmlns="http://www.w3.org/2000/svg" role="img"
-      aria-label="Placeholder: 900x150" preserveAspectRatio="xMidYMid slice" focusable="false">
+    <svg class="figure-img rounded bg-light" width="900" height="150" xmlns="http://www.w3.org/2000/svg" role="img"
+      aria-label="Placeholder: 900x150" focusable="false">
       <title>Placeholder</title>
       <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">900x150</text>
     </svg>
@@ -537,6 +544,38 @@
     <button type="button" class="btn btn-secondary" disabled>Disabled Button</button>
   </p>
 
+  <hr id="button-group" class="my-5">
+
+  <h3 class="pt-3">Button Group</h3>
+
+  <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group me-2" role="group" aria-label="First group">
+      <button type="button" class="btn btn-outline-secondary">1</button>
+      <button type="button" class="btn btn-outline-secondary">2</button>
+      <button type="button" class="btn btn-outline-secondary">3</button>
+      <button type="button" class="btn btn-outline-secondary">4</button>
+    </div>
+    <div class="input-group">
+      <div class="input-group-text" id="btnGroupAddon">@</div>
+      <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example"
+        aria-describedby="btnGroupAddon">
+    </div>
+  </div>
+
+  <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group" role="group" aria-label="First group">
+      <button type="button" class="btn btn-outline-secondary">1</button>
+      <button type="button" class="btn btn-outline-secondary">2</button>
+      <button type="button" class="btn btn-outline-secondary">3</button>
+      <button type="button" class="btn btn-outline-secondary">4</button>
+    </div>
+    <div class="input-group">
+      <div class="input-group-text" id="btnGroupAddon2">@</div>
+      <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example"
+        aria-describedby="btnGroupAddon2">
+    </div>
+  </div>
+
   <hr class="my-5" id="card">
 
   <h3 class="pt-3">Card</h3>
@@ -654,9 +693,7 @@
     </button>
   </div>
 
-  <hr class="my-5" id="carousel-dark">
-
-  <h3 class="pt-3">Carousel (Dark variant)</h3>
+  <h5 class="pt-4">Carousel (Dark variant)</h5>
 
   <div class="carousel carousel-dark slide border bg-light" data-bs-ride="carousel" id="carouselDark">
     <ol class="carousel-indicators">
@@ -906,9 +943,10 @@
 
   <h3 class="pt-3">Offcanvas</h3>
 
-  <p>Note: Offcanvas is not working on IE11. See <a href="https://github.com/coliff/bootstrap-ie11/issues/57"
+  <div class="alert alert-sm alert-danger bg-white p-2" role="alert">
+    Note: Offcanvas is not working on IE11. See <a href="https://github.com/coliff/bootstrap-ie11/issues/57"
       target="_blank">GitHub Issue #39</a>
-  </p>
+  </div>
 
   <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
     aria-controls="offcanvasExample">
@@ -941,6 +979,40 @@
         </ul>
       </div>
     </div>
+  </div>
+
+  <hr class="my-5" id="placeholders">
+
+  <h3 class="pt-3">Placeholders</h3>
+
+  <div class="d-flex justify-content-around">
+
+  <div class="card col-5">
+    <img src="..." class="card-img-top bg-success" height="140" width="300" alt="...">
+
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card col-5" aria-hidden="true">
+    <img src="..." class="card-img-top bg-secondary" height="140" width="300" alt="...">
+    <div class="card-body">
+      <h5 class="card-title placeholder-glow">
+        <span class="placeholder col-6"></span>
+      </h5>
+      <p class="card-text placeholder-glow">
+        <span class="placeholder col-7"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-8"></span>
+      </p>
+      <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+    </div>
+  </div>
   </div>
 
   <hr class="my-5" id="popovers">
@@ -1115,9 +1187,10 @@
 
   <h3 class="pt-3">Tabs</h3>
 
-  <p>Note: Requires <a href="https://www.npmjs.com/package/element-qsa-scope" target="_blank">element-qsa-scope</a>
+  <div class="alert alert-sm alert-danger bg-white p-2" role="alert">
+    Note: Tabs Requires <a href="https://www.npmjs.com/package/element-qsa-scope" target="_blank">element-qsa-scope</a>
     polyfill. See <a href="https://github.com/coliff/bootstrap-ie11/issues/39" target="_blank">GitHub Issue #39</a>
-  </p>
+  </div>
 
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
@@ -1203,6 +1276,12 @@
     title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
     Tooltip with HTML
   </button>
+
+  <div class="my-5">
+    <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="Disabled tooltip">
+      <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+    </span>
+  </div>
 
   <script>
     $(function () {
@@ -1658,12 +1737,33 @@
     })();
   </script>
 
+  <hr class="my-5" id="clearfix">
+
+  <h3 class="pt-3">Clearfix</h3>
+
+  <div class="bg-info clearfix">
+    <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
+    <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
+  </div>
+
+  <hr class="my-5" id="colored-links">
+
+  <h3 class="pt-3">Colored links</h3>
+
+  <a href="#" class="link-primary">Primary link</a>
+  <a href="#" class="link-secondary">Secondary link</a>
+  <a href="#" class="link-success">Success link</a>
+  <a href="#" class="link-danger">Danger link</a>
+  <a href="#" class="link-warning">Warning link</a>
+  <a href="#" class="link-info">Info link</a>
+  <a href="#" class="link-light">Light link</a>
+  <a href="#" class="link-dark">Dark link</a>
+
   <hr class="my-5" id="ratio">
 
   <h3 class="pt-3">Ratio</h3>
 
   <div>
-
     <div class="d-inline-block ratio ratio-1x1" style="width: 10rem;">
       <div class="d-flex align-items-center justify-content-center bg-light border">1x1</div>
     </div>
@@ -1676,8 +1776,85 @@
     <div class="d-inline-block ratio ratio-21x9" style="width: 10rem;">
       <div class="d-flex align-items-center justify-content-center bg-light border">21x9</div>
     </div>
-
   </div>
+
+  <hr class="my-5" id="stacks">
+
+  <h3 class="pt-3">Stacks</h3>
+
+  <div class="alert alert-sm alert-danger bg-white p-2" role="alert">
+    Note: The <code>gap-</code> property is not supported in Internet Explorer 11</div>
+
+  <h5 class="pt-3">Vertical</h5>
+
+  <div class="vstack gap-3">
+    <div class="bg-light border">First item</div>
+    <div class="bg-light border">Second item</div>
+    <div class="bg-light border">Third item</div>
+  </div>
+
+  <h5 class="pt-3">Horizontal</h5>
+
+  <div class="hstack gap-3">
+    <div class="bg-light border">First item</div>
+    <div class="bg-light border">Second item</div>
+    <div class="bg-light border">Third item</div>
+  </div>
+
+  <hr class="my-5" id="background">
+
+  <h3 class="pt-3">Background</h3>
+
+  <h5 class="mb-3 mt-5">Background Color</h5>
+
+  <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+  <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+  <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+  <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+  <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+  <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+  <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+  <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+  <div class="p-3 mb-2 bg-body text-white">.bg-body</div>
+  <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+  <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+
+  <h5 class="mb-3 mt-5">Background Gradient</h5>
+
+  <div class="p-3 mb-2 bg-primary bg-gradient text-white">.bg-primary.bg-gradient</div>
+  <div class="p-3 mb-2 bg-secondary bg-gradient text-white">.bg-secondary.bg-gradient</div>
+  <div class="p-3 mb-2 bg-success bg-gradient text-white">.bg-success.bg-gradient</div>
+  <div class="p-3 mb-2 bg-danger bg-gradient text-white">.bg-danger.bg-gradient</div>
+  <div class="p-3 mb-2 bg-warning bg-gradient text-dark">.bg-warning.bg-gradient</div>
+  <div class="p-3 mb-2 bg-info bg-gradient text-dark">.bg-info.bg-gradient</div>
+  <div class="p-3 mb-2 bg-light bg-gradient text-dark">.bg-light.bg-gradient</div>
+  <div class="p-3 mb-2 bg-dark bg-gradient text-white">.bg-dark.bg-gradient</div>
+
+  <h5 class="mb-3 mt-5">Background Opacity</h5>
+
+  <div class="bg-success p-2 text-white">This is default success background</div>
+  <div class="bg-success p-2 text-white bg-opacity-75">This is 75% opacity success background</div>
+  <div class="bg-success p-2 text-dark bg-opacity-50">This is 50% opacity success background</div>
+  <div class="bg-success p-2 text-dark bg-opacity-25">This is 25% opacity success background</div>
+  <div class="bg-success p-2 text-dark bg-opacity-10">This is 10% opacity success background</div>
+
+  <hr class="my-5" id="text-colors">
+
+  <h3 class="pt-3">Colors</h3>
+
+  <p class="text-primary">.text-primary</p>
+  <p class="text-secondary">.text-secondary</p>
+  <p class="text-success">.text-success</p>
+  <p class="text-danger">.text-danger</p>
+  <p class="text-warning bg-dark">.text-warning</p>
+  <p class="text-info bg-dark">.text-info</p>
+  <p class="text-light bg-dark">.text-light</p>
+  <p class="text-dark">.text-dark</p>
+  <p class="text-body">.text-body</p>
+  <p class="text-muted">.text-muted</p>
+  <p class="text-white bg-dark">.text-white</p>
+  <p class="text-black-50">.text-black-50</p>
+  <p class="text-white-50 bg-dark">.text-white-50</p>
 
   <hr class="my-5" id="interactions">
 
@@ -1699,15 +1876,21 @@
     has a <code>pe-auto</code> class and can be clicked.
   </p>
 
-  <hr class="my-5" id="clearfix">
+  <hr class="my-5" id="opacity">
 
-  <h3 class="pt-3">Clearfix</h3>
+  <h3 class="pt-3">Opacity</h3>
 
-
-  <div class="bg-info clearfix">
-    <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
-    <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
+  <div class="d-sm-flex">
+    <div class="opacity-100 p-3 m-2 bg-primary text-light fw-bold rounded">100%</div>
+    <div class="opacity-75 p-3 m-2 bg-primary text-light fw-bold rounded">75%</div>
+    <div class="opacity-50 p-3 m-2 bg-primary text-light fw-bold rounded">50%</div>
+    <div class="opacity-25 p-3 m-2 bg-primary text-light fw-bold rounded">25%</div>
   </div>
+
+  <div class="text-primary">This is default primary text</div>
+  <div class="text-primary text-opacity-75">This is 75% opacity primary text</div>
+  <div class="text-primary text-opacity-50">This is 50% opacity primary text</div>
+  <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>
 
   <hr class="my-5" id="position">
 
@@ -1770,7 +1953,7 @@
   <p class="text-break">
     mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

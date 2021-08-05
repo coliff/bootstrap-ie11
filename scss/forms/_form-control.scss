@@ -6,7 +6,7 @@
 // IE11 doesn't support input=color.
 // This changes the input so its not too narrow to allow a hex input (e.g. #FFFFFF)
 .form-control-color {
-  max-width: 5rem;
+  width: 5rem;
 }
 
 .form-control:disabled {
