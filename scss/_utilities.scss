@@ -15,6 +15,64 @@
   -ms-user-select: auto !important;
 }
 
+// Text opacity
+.text-opacity-75 {
+  opacity: 0.75;
+}
+
+.text-opacity-50 {
+  opacity: 0.5;
+}
+
+.text-opacity-25 {
+  opacity: 0.5;
+}
+
+// Text colors
+.text-primary {
+  color: rgb(13, 110, 253);
+}
+
+.text-secondary {
+  color: rgb(108, 117, 125);
+}
+
+.text-success {
+  color: rgb(25, 135, 84);
+}
+
+.text-danger {
+  color: rgb(220, 53, 69);
+}
+
+.text-warning {
+  color: rgb(255, 193, 7);
+}
+
+.text-info {
+  color: rgb(13, 202, 240);
+}
+
+.text-light {
+  color: rgb(248, 249, 250);
+}
+
+.text-dark {
+  color: rgb(33, 37, 41);
+}
+
+.text-body {
+  color: rgb(33, 37, 41);
+}
+
+.text-muted {
+  color: rgb(108, 117, 125);
+}
+
+.text-white {
+  color: rgb(255, 255, 255);
+}
+
 // IE11 doesn't support :not(:focus-within) so the rules defined in Bootstrap 5 are repeated here
 .visually-hidden,
 .visually-hidden-focusable:not(:focus) {

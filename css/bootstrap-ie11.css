@@ -1,5 +1,5 @@
 /*!
- * Bootstrap for IE11 v5.0.2 (https://github.com/coliff/bootstrap-ie11)
+ * Bootstrap for IE11 v5.1.0 (https://github.com/coliff/bootstrap-ie11)
  * Copyright 2021 C.Oliff
  * Licensed under MIT (https://github.com/coliff/bootstrap-ie11/blob/main/LICENSE)
  */
@@ -80,6 +80,62 @@ input {
 
   .user-select-auto {
     -ms-user-select: auto !important;
+  }
+
+  .text-opacity-75 {
+    opacity: 0.75;
+  }
+
+  .text-opacity-50 {
+    opacity: 0.5;
+  }
+
+  .text-opacity-25 {
+    opacity: 0.5;
+  }
+
+  .text-primary {
+    color: #0d6efd;
+  }
+
+  .text-secondary {
+    color: #6c757d;
+  }
+
+  .text-success {
+    color: #198754;
+  }
+
+  .text-danger {
+    color: #dc3545;
+  }
+
+  .text-warning {
+    color: #ffc107;
+  }
+
+  .text-info {
+    color: #0dcaf0;
+  }
+
+  .text-light {
+    color: #f8f9fa;
+  }
+
+  .text-dark {
+    color: #212529;
+  }
+
+  .text-body {
+    color: #212529;
+  }
+
+  .text-muted {
+    color: #6c757d;
+  }
+
+  .text-white {
+    color: white;
   }
 
   .visually-hidden,
@@ -173,7 +229,7 @@ input {
   }
 
   .form-control-color {
-    max-width: 5rem;
+    width: 5rem;
   }
 
   .form-control:disabled {
