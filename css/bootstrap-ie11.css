@@ -231,6 +231,10 @@ input {
     margin-bottom: 0;
   }
 
+  .vr {
+    border-right: 1px solid #212529;
+  }
+
   .breadcrumb-item {
     display: flex;
   }
