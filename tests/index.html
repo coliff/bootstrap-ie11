@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=11">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap 5 - IE11 Test</title>
   <meta name="description" content="Bootstrap 5 for Internet Explorer 11 Test Page">
@@ -1782,8 +1782,8 @@
 
   <h3 class="pt-3">Stacks</h3>
 
-  <div class="alert alert-sm alert-danger bg-white p-2" role="alert">
-    Note: The <code>gap-</code> property is not supported in Internet Explorer 11</div>
+  <div class="alert alert-sm alert-danger bg-white p-2 text-dark" role="alert">
+    Note: The <a href="https://caniuse.com/flexbox-gap" target="_blank" rel="noopener"><code>gap</code></a> property is not supported in Internet Explorer 11. A CSS polyfill is included but does not currently include responsive breakpoints. E.g <code>.hstack .gap-3</code> will have the correct spacing, but <code>.hstack .gap-md-3</code> will not.</div>
 
   <h5 class="pt-3">Vertical</h5>
 
@@ -1799,6 +1799,15 @@
     <div class="bg-light border">First item</div>
     <div class="bg-light border">Second item</div>
     <div class="bg-light border">Third item</div>
+  </div>
+
+  <h3 class="pt-3">Vertical rule</h3>
+
+  <div class="hstack">
+    <input class="form-control me-auto mx-2" type="text" placeholder="Add your item here...">
+    <button type="button" class="btn btn-secondary mx-2">Submit</button>
+    <div class="vr mx-2"></div>
+    <button type="button" class="btn btn-outline-danger mx-2">Reset</button>
   </div>
 
   <hr class="my-5" id="background">
