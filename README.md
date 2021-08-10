@@ -49,7 +49,9 @@ The CSS can be loaded via a CDN:
 - Correct the text-wrapping and color inheritance for `legend`
 - Disable auto-hiding scrollbar to avoid overlap on `pre`
 - Fixes for card image size bug
-- Fixes for text color and text opacity utlility classes
+- Fixes for text color and text opacity utility classes
+- Improved layout for `justify-content-evenly` flex utility
+- Fixes for stacks gap spacing
 - Add the correct display values for `template` and `main`
 - Fixes for modals (`.modal-dialog-centered` and `.modal-dialog-scrollable`)
 - Fixes for forms (inputs, checkboxes, radio buttons, switches, selects, ranges, placeholders and floating labels)
