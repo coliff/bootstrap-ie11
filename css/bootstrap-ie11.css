@@ -235,6 +235,10 @@ input {
     border-right: 1px solid #212529;
   }
 
+  .justify-content-evenly {
+    justify-content: space-around !important;
+  }
+
   .breadcrumb-item {
     display: flex;
   }

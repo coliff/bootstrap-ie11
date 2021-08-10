@@ -32,6 +32,10 @@
       margin-top: .5rem;
       overflow: auto;
     }
+    .bd-highlight {
+      background-color: rgba(86, 61, 124, 0.15);
+      border: 1px solid rgba(86, 61, 124, 0.15);
+    }
   </style>
 
 </head>
@@ -126,6 +130,7 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownUtilities">
               <li><a class="dropdown-item small" href="#background">Background</a></li>
               <li><a class="dropdown-item small" href="#text-colors">Colors</a></li>
+              <li><a class="dropdown-item small" href="#flex">Flex</a></li>
               <li><a class="dropdown-item small" href="#interactions">Interactions</a></li>
               <li><a class="dropdown-item small" href="#opacity">Opacity</a></li>
               <li><a class="dropdown-item small" href="#position">Position</a></li>
@@ -1864,6 +1869,49 @@
   <p class="text-white bg-dark">.text-white</p>
   <p class="text-black-50">.text-black-50</p>
   <p class="text-white-50 bg-dark">.text-white-50</p>
+
+  <hr class="my-5" id="flex">
+
+  <h3 class="pt-3">Flex</h3>
+
+<div class="bd-example">
+  <h6 class="font-monospace">.justify-content-start</h6>
+  <div class="d-flex justify-content-start bd-highlight mb-3">
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="p-2 bd-highlight">Flex item</div>
+  </div>
+  <h6 class="font-monospace">.justify-content-end</h6>
+  <div class="d-flex justify-content-end bd-highlight mb-3">
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="p-2 bd-highlight">Flex item</div>
+  </div>
+  <h6 class="font-monospace">.justify-content-center</h6>
+  <div class="d-flex justify-content-center bd-highlight mb-3">
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="p-2 bd-highlight">Flex item</div>
+  </div>
+  <h6 class="font-monospace">.justify-content-between</h6>
+  <div class="d-flex justify-content-between bd-highlight mb-3">
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="p-2 bd-highlight">Flex item</div>
+  </div>
+  <h6 class="font-monospace">.justify-content-around</h6>
+  <div class="d-flex justify-content-around bd-highlight mb-3">
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="p-2 bd-highlight">Flex item</div>
+  </div>
+  <h6 class="font-monospace">.justify-content-evenly</h6>
+  <div class="d-flex justify-content-evenly bd-highlight">
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="p-2 bd-highlight">Flex item</div>
+  </div>
+</div>
 
   <hr class="my-5" id="interactions">
 
