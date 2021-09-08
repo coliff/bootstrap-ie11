@@ -18,7 +18,7 @@
 - Clone the repo `git clone https://github.com/coliff/bootstrap-ie11.git`
 - Install with [npm](https://www.npmjs.com/package/bootstrap-ie11) `npm install bootstrap-ie11`
 - Install with [yarn](https://classic.yarnpkg.com/en/package/bootstrap-ie11) `yarn add bootstrap-ie11`
-- Install with [Composer](https://packagist.org/packages/coliff/bootstrap-ie11) `composer require coliff/bootstrap-ie11:5.1.0`
+- Install with [Composer](https://packagist.org/packages/coliff/bootstrap-ie11) `composer require coliff/bootstrap-ie11`
 
 ## Usage
 
@@ -60,6 +60,7 @@ The CSS can be loaded via a CDN:
 - Fix for `valid-tooltip` & `invalid-tooltip` positioning
 - Adds vendor prefixes for `user-select-auto` and `user-select-none` utilities
 - Fix for `.visually-hidden` utility class
+- Fix for vertical rule `.vr` class
 - Bootstrap 5 Beta 2 is loaded via CDN (The JavaScript in Bootstrap 5 Beta 3 and later is incompatible)
 - Polyfill for CSS custom properties ([ie11CustomProperties](https://github.com/nuxodin/ie11CustomProperties))
 - Polyfill to fix most JavaScript components ([Polyfill.io](https://polyfill.io/v3/))

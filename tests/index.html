@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap 5 - IE11 Test</title>
   <meta name="description" content="Bootstrap 5 for Internet Explorer 11 Test Page">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/bootstrap-ie11.css"
     media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 
@@ -27,10 +27,8 @@
 
   <style>
     .scrollspy-example {
-      position: relative;
       height: 200px;
       margin-top: .5rem;
-      overflow: auto;
     }
     .bd-highlight {
       background-color: rgba(86, 61, 124, 0.15);
@@ -44,7 +42,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fixed-top mb-5">
     <div class="container">
-      <a class="navbar-brand" href="#">Bootstrap 5 for IE 11 <small class="text-muted small fs-6">5.1.0</small></a>
+      <a class="navbar-brand" href="#">Bootstrap 5 for IE 11 <small class="text-muted small fs-6">5.1.1</small></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -1124,7 +1122,7 @@
         </li>
       </ul>
     </nav>
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example position-relative overflow-auto">
       <h4 id="fat">@fat</h4>
       <p>Ad leggings, brunch id art party dolor. Pitchfork yr lo-fi before they sold out qui.
         Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh cardigan. Seitan
@@ -1555,6 +1553,26 @@
   <div class="input-group">
     <span class="input-group-text">With textarea</span>
     <textarea class="form-control" aria-label="With textarea"></textarea>
+  </div>
+
+  <div class="input-group my-3">
+    <div class="input-group-text">
+      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+    </div>
+    <input type="text" class="form-control" aria-label="Text input with checkbox">
+  </div>
+
+  <div class="input-group">
+    <div class="input-group-text">
+      <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+    </div>
+    <input type="text" class="form-control" aria-label="Text input with radio button">
+  </div>
+
+  <div class="input-group mt-3">
+    <span class="input-group-text">First and last name</span>
+    <input type="text" aria-label="First name" class="form-control">
+    <input type="text" aria-label="Last name" class="form-control">
   </div>
 
   <hr class="my-5" id="floating-labels">
@@ -2010,7 +2028,7 @@
   <p class="text-break">
     mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

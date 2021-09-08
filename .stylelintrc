@@ -1,14 +1,17 @@
 {
   "extends": "stylelint-config-twbs-bootstrap/scss",
-  "rules":
-    {
-      "declaration-no-important": null,
-      "no-invalid-position-at-import-rule": null,
-      "number-leading-zero": null,
-      "property-disallowed-list": ["gap", "text-size-adjust", "will-change"],
-      "property-no-vendor-prefix": null,
-      "selector-max-type": null,
-      "selector-max-universal": null,
-      "selector-no-vendor-prefix": null,
-    },
+  "rules": {
+    "declaration-no-important": null,
+    "no-invalid-position-at-import-rule": null,
+    "number-leading-zero": null,
+    "property-disallowed-list": [
+      "gap",
+      "text-size-adjust",
+      "will-change"
+    ],
+    "property-no-vendor-prefix": null,
+    "selector-max-type": null,
+    "selector-max-universal": null,
+    "selector-no-vendor-prefix": null
+  }
 }
