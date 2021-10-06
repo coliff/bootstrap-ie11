@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap 5 - IE11 Test</title>
   <meta name="description" content="Bootstrap 5 for Internet Explorer 11 Test Page">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/bootstrap-ie11.css"
     media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 
@@ -28,7 +28,6 @@
   <style>
     .scrollspy-example {
       height: 200px;
-      margin-top: .5rem;
     }
     .bd-highlight {
       background-color: rgba(86, 61, 124, 0.15);
@@ -38,11 +37,11 @@
 
 </head>
 
-<body class="container mb-5">
+<body class="container mb-5" data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="0">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fixed-top mb-5">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fixed-top mb-5" id="nav">
     <div class="container">
-      <a class="navbar-brand" href="#">Bootstrap 5 for IE 11 <small class="text-muted small fs-6">5.1.1</small></a>
+      <a class="navbar-brand" href="#">Bootstrap 5 for IE 11 <small class="text-muted small fs-6">5.1.2</small></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -63,13 +62,14 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownComponents" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="#components" id="navbarDropdownComponents" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Components
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownComponents">
               <li><a class="dropdown-item small" href="#accordion">Accordion</a></li>
               <li><a class="dropdown-item small" href="#alerts">Alerts</a></li>
+              <li><a class="dropdown-item small" href="#badges">Badges</a></li>
               <li><a class="dropdown-item small" href="#breadcrumb">Breadcrumb</a></li>
               <li><a class="dropdown-item small" href="#buttons">Buttons</a></li>
               <li><a class="dropdown-item small" href="#button-group">Button group</a></li>
@@ -85,13 +85,14 @@
               <li><a class="dropdown-item small" href="#popovers">Popovers</a></li>
               <li><a class="dropdown-item small" href="#progress">Progress</a></li>
               <li><a class="dropdown-item small" href="#scrollspy">Scrollspy</a></li>
+              <li><a class="dropdown-item small" href="#spinners">Spinners</a></li>
               <li><a class="dropdown-item small" href="#tabs">Tabs</a></li>
               <li><a class="dropdown-item small" href="#toasts">Toasts</a></li>
               <li><a class="dropdown-item small" href="#tooltips">Tooltips</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownForms" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="#forms" id="navbarDropdownForms" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Forms
             </a>
@@ -109,7 +110,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHelpers" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="#helpers" id="navbarDropdownHelpers" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Helpers
             </a>
@@ -121,7 +122,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUtilities" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="#utilities" id="navbarDropdownUtilities" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Utilities
             </a>
@@ -144,8 +145,11 @@
     </div>
   </nav>
 
-  <h2 class="text-muted mb-4 h1 d-none">Content</h2>
-  <hr id="typography" class="mb-5 invisible">
+  <main>
+
+  <h2 class="d-none" id="content">Content</h2>
+
+  <hr id="typography" class="mb-4 invisible">
 
   <h3 class="pt-3">Typography</h3>
 
@@ -428,7 +432,8 @@
     <figcaption class="figure-caption">A caption for the above image.</figcaption>
   </figure>
 
-  <h2 class="text-muted mb-4 h1 d-none">Components</h2>
+
+  <h2 class="mb-4 d-none" id="components">Components</h2>
 
   <hr id="accordion" class="my-5">
 
@@ -514,6 +519,79 @@
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+    </symbol>
+    <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+    </symbol>
+    <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    </symbol>
+  </svg>
+
+  <div class="alert alert-primary d-flex align-items-center" role="alert">
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+    <div>
+      An example alert with an icon
+    </div>
+  </div>
+  <div class="alert alert-success d-flex align-items-center" role="alert">
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+    <div>
+      An example success alert with an icon
+    </div>
+  </div>
+  <div class="alert alert-warning d-flex align-items-center" role="alert">
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+    <div>
+      An example warning alert with an icon
+    </div>
+  </div>
+  <div class="alert alert-danger d-flex align-items-center" role="alert">
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+    <div>
+      An example danger alert with an icon
+    </div>
+  </div>
+
+  <hr id="badges" class="my-5">
+
+  <h3 class="pt-3">Badges</h3>
+
+  <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+  <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+  <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+  <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+  <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+  <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+
+  <div class="w-100 my-4">
+    <span class="badge bg-primary">Primary</span>
+    <span class="badge bg-secondary">Secondary</span>
+    <span class="badge bg-success">Success</span>
+    <span class="badge bg-danger">Danger</span>
+    <span class="badge bg-warning text-dark">Warning</span>
+    <span class="badge bg-info text-dark">Info</span>
+    <span class="badge bg-light text-dark">Light</span>
+    <span class="badge bg-dark">Dark</span>
+  </div>
+
+  <div class="w-100 mb-3">
+    <button type="button" class="btn btn-primary position-relative">
+      Inbox
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        99+
+      <span class="visually-hidden">unread messages</span>
+    </span>
+    </button>
+  </div>
+
+  <button type="button" class="btn btn-primary">
+    Notifications <span class="badge bg-secondary">4</span>
+  </button>
+
   <hr id="breadcrumb" class="my-5">
 
   <h3 class="pt-3">Breadcrumb</h3>
@@ -523,6 +601,13 @@
       <li class="breadcrumb-item"><a href="#">Home</a></li>
       <li class="breadcrumb-item"><a href="#">Library</a></li>
       <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+  </nav>
+
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
     </ol>
   </nav>
 
@@ -905,7 +990,7 @@
 
   <h3 class="pt-3">Navbar</h3>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-md navbar-light bg-light mb-5">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
@@ -924,6 +1009,80 @@
               Dropdown
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExampleDark" aria-controls="navbarExampleDark" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExampleDark">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDark" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownDark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExampleBlue" aria-controls="navbarExampleBlue" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExampleBlue">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlue" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownBlue">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><hr class="dropdown-divider"></li>
@@ -1122,7 +1281,7 @@
         </li>
       </ul>
     </nav>
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example position-relative overflow-auto">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example mt-1 position-relative overflow-auto">
       <h4 id="fat">@fat</h4>
       <p>Ad leggings, brunch id art party dolor. Pitchfork yr lo-fi before they sold out qui.
         Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh cardigan. Seitan
@@ -1185,6 +1344,45 @@
       </p>
     </div>
   </div>
+
+
+  <hr class="my-5" id="spinners">
+
+  <h3 class="py-3">Spinners</h3>
+
+  <div class="w-100 mb-4">
+<div class="spinner-border text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-light" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-dark" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+</div>
+
+  <div class="w-100 mb-4">
+<div class="spinner-grow" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+  </div>
+
 
   <hr class="my-5" id="tabs">
 
@@ -1296,6 +1494,8 @@
       $('[data-bs-toggle="tooltip"]').tooltip();
     });
   </script>
+
+  <h2 class="mb-4 d-none" id="forms">Forms</h2>
 
   <hr class="my-5" id="checks">
 
@@ -1760,6 +1960,8 @@
     })();
   </script>
 
+  <h2 class="mb-4 d-none" id="helpers">Helpers</h2>
+
   <hr class="my-5" id="clearfix">
 
   <h3 class="pt-3">Clearfix</h3>
@@ -1832,6 +2034,8 @@
     <div class="vr"></div>
     <button type="button" class="btn btn-outline-danger">Reset</button>
   </div>
+
+  <h2 class="mb-4 d-none" id="utilities">Utilities</h2>
 
   <hr class="my-5" id="background">
 
@@ -2028,7 +2232,32 @@
   <p class="text-break">
     mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <h5 class="pt-3">Font weight and italics</h5>
+
+  <p class="fw-bold">Bold text.</p>
+  <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+  <p class="fw-normal">Normal weight text.</p>
+  <p class="fw-light">Light weight text.</p>
+  <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+  <p class="fst-italic">Italic text.</p>
+  <p class="fst-normal">Text with normal font style</p>
+
+  <h5 class="pt-3">Line height</h5>
+
+  <p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+  <p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+  <p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+  <p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+
+  <h5 class="pt-3">Text decoration</h5>
+
+  <p class="text-decoration-underline">This text has a line underneath it.</p>
+  <p class="text-decoration-line-through">This text has a line going through it.</p>
+  <a href="#" class="text-decoration-none">This link has its text decoration removed</a>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
