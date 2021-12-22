@@ -453,15 +453,15 @@ input {
   }
 
   .ratio-4x3::before {
-    padding-top: calc(3 / 4 * 100%);
+    padding-top: 75%;
   }
 
   .ratio-16x9::before {
-    padding-top: calc(9 / 16 * 100%);
+    padding-top: 56.25%;
   }
 
   .ratio-21x9::before {
-    padding-top: calc(9 / 21 * 100%);
+    padding-top: 42.8571428571%;
   }
 }
 

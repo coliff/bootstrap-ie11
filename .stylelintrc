@@ -1,5 +1,5 @@
 {
-  "extends": "stylelint-config-twbs-bootstrap/scss",
+  "extends": "stylelint-config-twbs-bootstrap",
   "rules": {
     "declaration-no-important": null,
     "no-invalid-position-at-import-rule": null,
