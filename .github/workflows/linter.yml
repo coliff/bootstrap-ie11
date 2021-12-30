@@ -2,6 +2,8 @@ name: Lint Code Base
 
 on:
   push:
+    branches-ignore:
+      - "dependabot/**"
 
 jobs:
   build:
@@ -18,7 +20,5 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: main
           FILTER_REGEX_EXCLUDE: .*css/.*
-          VALIDATE_ANSIBLE: false
-          VALIDATE_EDITORCONFIG: false
           VALIDATE_MARKDOWN: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
