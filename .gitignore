@@ -23,7 +23,6 @@
 *.sublime-workspace
 nbproject
 Thumbs.db
-package-lock.json
 
 # folders
 /node_modules/
