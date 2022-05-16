@@ -3,7 +3,7 @@
 }
 
 .table.table-striped:not(.table-dark) > tbody > tr:nth-child(odd) > * {
-  background-color: #f2f2f2 !important;
+  background-color: rgba(0 0 0 / 5%) !important;
 }
 
 .table-dark.table-striped > :not(caption) > *:nth-child(odd) > * {
@@ -15,7 +15,7 @@
 }
 
 .table.table-hover:not(.table-dark) > tbody > tr:hover > * {
-  background-color: #f2f2f2 !important;
+  background-color: rgba(0 0 0 / 5%) !important;
 }
 
 .table.table-hover.table-dark > tbody > tr:hover > * {
@@ -23,5 +23,13 @@
 }
 
 .table.table-hover.table-striped > tbody > tr:hover > * {
-  background-color: #e5e5e5 !important;
+  background-color: rgba(0 0 0 / 5%) !important;
+}
+
+.table-striped-columns > :not(caption) > tr > :nth-child(2n) {
+  background-color: rgba(0 0 0 / 5%) !important;
+}
+
+.table-dark.table-striped-columns > :not(caption) > tr > :nth-child(2n) {
+  background-color: rgba(0, 0, 0, 5) !important;
 }
