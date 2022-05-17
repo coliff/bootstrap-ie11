@@ -92,6 +92,31 @@
   border-width: 5px !important;
 }
 
+// Radius
+.rounded {
+  border-radius: 0.375rem;
+}
+
+.rounded-bottom {
+  border-bottom-right-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.rounded-end {
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
+
+.rounded-start {
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.rounded-top {
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
 // Border Radius Size
 .rounded-1 {
   border-radius: 0.375rem;

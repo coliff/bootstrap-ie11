@@ -10,3 +10,17 @@
 .btn-close.disabled {
   -ms-user-select: none;
 }
+
+.btn-group > :not(:last-child).btn-group > .btn,
+.btn-group > :first-child.btn.dropdown-toggle-split,
+.btn-group > :not(:last-child):not(.dropdown-toggle).btn {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.btn-group > :not(:first-child).btn-group > .btn,
+.btn-group > :nth-child(n + 3).btn,
+.btn-group > :not(.btn-check) + .btn {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
