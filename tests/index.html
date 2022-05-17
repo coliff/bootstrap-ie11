@@ -120,6 +120,8 @@
               <li><a class="dropdown-item small" href="#colored-links">Colored links</a></li>
               <li><a class="dropdown-item small" href="#ratio">Ratio</a></li>
               <li><a class="dropdown-item small" href="#stacks">Stacks</a></li>
+              <li><a class="dropdown-item small" href="#text-truncation">Text truncation</a></li>
+              <li><a class="dropdown-item small" href="#vertical-rule">Vertical Rule</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -136,6 +138,7 @@
               <li><a class="dropdown-item small" href="#opacity">Opacity</a></li>
               <li><a class="dropdown-item small" href="#position">Position</a></li>
               <li><a class="dropdown-item small" href="#shadows">Shadows</a></li>
+              <li><a class="dropdown-item small" href="#sizing">Sizing</a></li>
               <li><a class="dropdown-item small" href="#text">Text</a></li>
             </ul>
           </li>
@@ -657,6 +660,17 @@
     Notifications <span class="badge bg-secondary">4</span>
   </button>
 
+  <div class="mt-4">
+    <span class="badge rounded-pill text-bg-primary">Primary</span>
+    <span class="badge rounded-pill text-bg-secondary">Secondary</span>
+    <span class="badge rounded-pill text-bg-success">Success</span>
+    <span class="badge rounded-pill text-bg-danger">Danger</span>
+    <span class="badge rounded-pill text-bg-warning">Warning</span>
+    <span class="badge rounded-pill text-bg-info">Info</span>
+    <span class="badge rounded-pill text-bg-light">Light</span>
+    <span class="badge rounded-pill text-bg-dark">Dark</span>
+  </div>
+
   <hr id="breadcrumb" class="my-5">
 
   <h3 class="pt-3">Breadcrumb</h3>
@@ -701,7 +715,24 @@
 
   <h3 class="pt-3">Button Group</h3>
 
-  <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group me-2" role="group" aria-label="First group">
+      <button type="button" class="btn btn-primary">1</button>
+      <button type="button" class="btn btn-primary">2</button>
+      <button type="button" class="btn btn-primary">3</button>
+      <button type="button" class="btn btn-primary">4</button>
+    </div>
+    <div class="btn-group me-2" role="group" aria-label="Second group">
+      <button type="button" class="btn btn-secondary">5</button>
+      <button type="button" class="btn btn-secondary">6</button>
+      <button type="button" class="btn btn-secondary">7</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Third group">
+      <button type="button" class="btn btn-info">8</button>
+    </div>
+  </div>
+
+  <div class="btn-toolbar my-3" role="toolbar" aria-label="Toolbar with button groups">
     <div class="btn-group me-2" role="group" aria-label="First group">
       <button type="button" class="btn btn-outline-secondary">1</button>
       <button type="button" class="btn btn-outline-secondary">2</button>
@@ -2135,6 +2166,30 @@
     <button type="button" class="btn btn-outline-danger">Reset</button>
   </div>
 
+  <hr class="my-5" id="text-truncation">
+
+  <h3 class="pt-3">Text truncation</h3>
+
+  <div class="text-truncation">
+    <!-- Block level -->
+    <div class="row">
+      <div class="col-2 text-truncate">
+        This text is quite long, and will be truncated once displayed.
+      </div>
+    </div>
+
+    <!-- Inline level -->
+    <span class="d-inline-block text-truncate" style="max-width: 150px;">
+      This text is quite long, and will be truncated once displayed.
+    </span>
+  </div>
+
+  <hr class="my-5" id="vertical-rule">
+
+  <h3 class="pt-3">Vertical rule</h3>
+
+  <div class="vr"></div>
+
   <h2 class="mb-4 d-none" id="utilities">Utilities</h2>
 
   <hr class="my-5" id="background">
@@ -2243,6 +2298,11 @@
   <p class="text-black-50">.text-black-50</p>
   <p class="text-white-50 bg-dark">.text-white-50</p>
 
+  <div class="text-primary">This is default primary text</div>
+  <div class="text-primary text-opacity-75">This is 75% opacity primary text</div>
+  <div class="text-primary text-opacity-50">This is 50% opacity primary text</div>
+  <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>
+
   <hr class="my-5" id="flex">
 
   <h3 class="pt-3">Flex</h3>
@@ -2317,11 +2377,6 @@
     <div class="opacity-25 p-3 m-2 bg-primary text-light fw-bold rounded">25%</div>
   </div>
 
-  <div class="text-primary">This is default primary text</div>
-  <div class="text-primary text-opacity-75">This is 75% opacity primary text</div>
-  <div class="text-primary text-opacity-50">This is 50% opacity primary text</div>
-  <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>
-
   <hr class="my-5" id="position">
 
   <h3 class="pt-3">Position</h3>
@@ -2376,6 +2431,17 @@
 
   <div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
 
+  <hr class="my-5" id="sizing">
+
+  <h3 class="pt-3">Sizing</h3>
+
+  <div>
+    <div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+    <div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+    <div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+    <div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+    <div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+  </div>
 
   <hr class="my-5" id="text">
 
@@ -2400,6 +2466,7 @@
 
   <p class="fw-bold">Bold text.</p>
   <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+  <p class="fw-semibold">Semibold weight text.</p>
   <p class="fw-normal">Normal weight text.</p>
   <p class="fw-light">Light weight text.</p>
   <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
