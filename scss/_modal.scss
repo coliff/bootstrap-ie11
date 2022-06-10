@@ -27,3 +27,9 @@
 .modal-dialog-centered.modal-dialog-scrollable::before {
   content: none;
 }
+
+// Ensures that modals are horizontally centered
+.modal-dialog {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
