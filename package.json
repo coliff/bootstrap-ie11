@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-ie11",
-  "version": "5.2.0",
+  "version": "5.2.1",
   "description": "Bootstrap 5 for Internet Explorer 11",
   "keywords": [
     "bootstrap",
@@ -41,6 +41,7 @@
     "css-compile": "sass --style expanded --source-map --embed-sources scss:css",
     "css-lint": "stylelint \"scss/*.scss\"",
     "css-minify": "cleancss --format breakWith=lf --source-map --source-map-inline-sources --output css/bootstrap-ie11.min.css css/bootstrap-ie11.css",
+    "html-lint": "npx htmlhint \"tests/*.html\"",
     "prettier": "npx prettier --write \"scss/*.scss\"",
     "test": "npm run css-lint"
   },

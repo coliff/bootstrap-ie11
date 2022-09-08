@@ -37,7 +37,7 @@ If you'd prefer to load the bootstrap-ie11 CSS without JavaScript you could use 
 The CSS can be loaded via a CDN:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.2.1/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 ```
 
 ## FAQS
@@ -65,6 +65,7 @@ The CSS can be loaded via a CDN:
 - Polyfill for CSS custom properties ([ie11CustomProperties](https://github.com/nuxodin/ie11CustomProperties))
 - Polyfill to fix most JavaScript components ([Polyfill.io](https://polyfill.io/v3/))
 - Polyfill to fix tabs ([element-qsa-scope polyfill](https://www.npmjs.com/package/element-qsa-scope))
+- Fixes for Accordion button icons
 
 ### Known Issues
 
@@ -73,6 +74,7 @@ The CSS can be loaded via a CDN:
 - SVG images with `.img-fluid` are sometimes disproportionately sized. To fix this, add `width: 100%;` or `.w-100` where necessary. This fix improperly sizes other image formats, so this isn't applied automatically.
 - There is a slight delay before the ie11CustomProperties polyfill works its magic. Consider adding `body{font-family:"Segoe UI", Arial, sans-serif;}` to your IE11-only stylesheet so there isn't a delay in the text displaying.
 - View a list of known issues at [https://github.com/coliff/bootstrap-ie11/issues](https://github.com/coliff/bootstrap-ie11/issues).
+- From Bootstrap 5.2 onwards, CSS custom properties are used extensively which can cause issues with the ie11CustomProperties polyfill.
 
 ### How can I test this?
 
