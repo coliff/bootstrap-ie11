@@ -2,8 +2,11 @@ name: Lint Code Base
 
 on:
   push:
-    branches-ignore:
-      - "dependabot/**"
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
 
 jobs:
   build:
@@ -17,8 +20,11 @@ jobs:
       - name: Lint Code Base
         uses: github/super-linter/slim@v4
         env:
-          VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: main
           FILTER_REGEX_EXCLUDE: .*css/.*
-          VALIDATE_MARKDOWN: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LOG_LEVEL: NOTICE
+          SUPPRESS_POSSUM: true
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_MARKDOWN: false
+          
