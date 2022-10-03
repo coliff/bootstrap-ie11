@@ -110,6 +110,26 @@ input {
   .border-white {
     border-color: rgb(255, 255, 255);
   }
+  .border-top {
+    border-top-color: #dee2e6;
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+  .border-bottom {
+    border-bottom-color: #dee2e6;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
+  .border-start {
+    border-left-color: #dee2e6;
+    border-left-style: solid;
+    border-left-width: 1px;
+  }
+  .border-end {
+    border-right-color: #dee2e6;
+    border-right-style: solid;
+    border-right-width: 1px;
+  }
   .border-1 {
     border-width: 1px !important;
   }
@@ -163,37 +183,37 @@ input {
     border-radius: 50rem;
   }
   .text-primary {
-    color: rgb(13, 110, 253);
+    color: rgb(13, 110, 253) !important;
   }
   .text-secondary {
-    color: rgb(108, 117, 125);
+    color: rgb(108, 117, 125) !important;
   }
   .text-success {
-    color: rgb(25, 135, 84);
+    color: rgb(25, 135, 84) !important;
   }
   .text-danger {
-    color: rgb(220, 53, 69);
+    color: rgb(220, 53, 69) !important;
   }
   .text-warning {
-    color: rgb(255, 193, 7);
+    color: rgb(255, 193, 7) !important;
   }
   .text-info {
-    color: rgb(13, 202, 240);
+    color: rgb(13, 202, 240) !important;
   }
   .text-light {
-    color: rgb(248, 249, 250);
+    color: rgb(248, 249, 250) !important;
   }
   .text-dark {
-    color: rgb(33, 37, 41);
+    color: rgb(33, 37, 41) !important;
   }
   .text-body {
-    color: rgb(33, 37, 41);
+    color: rgb(33, 37, 41) !important;
   }
   .text-muted {
-    color: rgb(108, 117, 125);
+    color: rgb(108, 117, 125) !important;
   }
   .text-white {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
   }
   .visually-hidden,
 .visually-hidden-focusable:not(:focus) {
