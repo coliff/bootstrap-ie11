@@ -37,7 +37,7 @@ If you'd prefer to load the bootstrap-ie11 CSS without JavaScript you could use 
 The CSS can be loaded via a CDN:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.2.2/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.2.3/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 ```
 
 ## FAQS
