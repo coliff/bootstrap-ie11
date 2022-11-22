@@ -1,5 +1,5 @@
 /*!
- * Bootstrap for IE11 v5.2.2 (https://github.com/coliff/bootstrap-ie11)
+ * Bootstrap for IE11 v5.2.3 (https://github.com/coliff/bootstrap-ie11)
  * Copyright 2022 C.Oliff
  * Licensed under MIT (https://github.com/coliff/bootstrap-ie11/blob/main/LICENSE)
  */
@@ -14,7 +14,7 @@
     overflow: visible;
   }
   button,
-input {
+  input {
     overflow: visible;
   }
   legend {
@@ -216,7 +216,7 @@ input {
     color: rgb(255, 255, 255) !important;
   }
   .visually-hidden,
-.visually-hidden-focusable:not(:focus) {
+  .visually-hidden-focusable:not(:focus) {
     position: absolute !important;
     width: 1px !important;
     height: 1px !important;
@@ -306,18 +306,18 @@ input {
     background-clip: content-box;
   }
   .btn-close:disabled,
-.btn-close.disabled {
+  .btn-close.disabled {
     -ms-user-select: none;
   }
   .btn-group > :not(:last-child).btn-group > .btn,
-.btn-group > :first-child.btn.dropdown-toggle-split,
-.btn-group > :not(:last-child):not(.dropdown-toggle).btn {
+  .btn-group > :first-child.btn.dropdown-toggle-split,
+  .btn-group > :not(:last-child):not(.dropdown-toggle).btn {
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
   }
   .btn-group > :not(:first-child).btn-group > .btn,
-.btn-group > :nth-child(n+3).btn,
-.btn-group > :not(.btn-check) + .btn {
+  .btn-group > :nth-child(n+3).btn,
+  .btn-group > :not(.btn-check) + .btn {
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
   }
@@ -338,7 +338,7 @@ input {
     margin-left: -1.3em;
   }
   .form-switch .form-check-input,
-.form-switch .form-check-input:focus {
+  .form-switch .form-check-input:focus {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -4 8 8'%3e%3ccircle r='3' fill='%23ccc'/%3e%3c/svg%3e");
   }
   .form-switch :checked.form-check-input {
@@ -366,8 +366,8 @@ input {
     transform: scale(0.9) translateY(-0.01rem) translateX(0.15rem);
   }
   .form-floating input:-ms-input-placeholder,
-.form-floating select:-ms-input-placeholder,
-.form-floating textarea:-ms-input-placeholder {
+  .form-floating select:-ms-input-placeholder,
+  .form-floating textarea:-ms-input-placeholder {
     color: transparent;
   }
   .form-floating input:not(:-ms-input-placeholder) {
@@ -375,8 +375,8 @@ input {
     padding-bottom: 0.25rem;
   }
   .form-floating input:not(:-ms-input-placeholder) ~ label,
-.form-floating select:not(:-ms-input-placeholder) ~ label,
-.form-floating textarea:not(:-ms-input-placeholder) ~ label {
+  .form-floating select:not(:-ms-input-placeholder) ~ label,
+  .form-floating textarea:not(:-ms-input-placeholder) ~ label {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
     font-size: 14px;
@@ -430,8 +430,8 @@ input {
     min-height: 1px;
   }
   .card-img,
-.card-img-top,
-.card-img-bottom {
+  .card-img-top,
+  .card-img-bottom {
     flex-shrink: 0;
   }
   .accordion-button:not(.collapsed)::after {
@@ -443,8 +443,8 @@ input {
     transition: transform 0.2s ease-in-out;
   }
   .accordion-flush .accordion-item,
-.accordion-flush .accordion-item .accordion-button,
-.accordion-flush .accordion-item .accordion-button.collapsed {
+  .accordion-flush .accordion-item .accordion-button,
+  .accordion-flush .accordion-item .accordion-button.collapsed {
     border-radius: 0 !important;
   }
   .modal-dialog-scrollable {
@@ -518,7 +518,7 @@ input {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23111' viewBox='0 0 16 16'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   }
   .invalid-tooltip,
-.valid-tooltip {
+  .valid-tooltip {
     left: 0;
     margin-left: 8px;
   }
