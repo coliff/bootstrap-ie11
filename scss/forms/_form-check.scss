@@ -9,7 +9,7 @@
 }
 
 // Hides the default caret
-input::-ms-check {
+.form-check-input::-ms-check {
   color: transparent;
   background-color: transparent;
   border: 0;
