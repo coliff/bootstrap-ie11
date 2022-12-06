@@ -1,18 +1,13 @@
 {
   "version": "0.2",
-  "words": [
-    "hstack",
-    "jsdelivr",
-    "Segoe",
-    "twbs"
-  ],
+  "words": ["ccircle", "hstack", "jsdelivr", "Segoe", "twbs"],
   "language": "en,en-US",
   "allowCompoundWords": true,
   "ignorePaths": [
     ".cspell.json",
     "**/node_modules/**",
     "*.min.*",
-    "test.*"
+    "**/scss/**"
   ],
   "useGitignore": true
 }
