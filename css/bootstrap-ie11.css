@@ -325,7 +325,7 @@
     border-color: rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 0 1px rgba(111, 111, 111, 0.4);
   }
-  input::-ms-check {
+  .form-check-input::-ms-check {
     color: transparent;
     background-color: transparent;
     border: 0;
