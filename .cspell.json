@@ -2,12 +2,15 @@
   "version": "0.2",
   "words": [
     "ccircle",
+    "cpath",
+    "csvg",
     "Dropup",
     "hstack",
     "jsdelivr",
     "Oliff",
     "Segoe",
-    "twbs"
+    "twbs",
+    "vstack"
   ],
   "language": "en,en-US",
   "allowCompoundWords": true,
