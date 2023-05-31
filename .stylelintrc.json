@@ -9,6 +9,7 @@
     "selector-max-type": null,
     "selector-max-universal": null,
     "selector-no-vendor-prefix": null,
-    "stylistic/number-leading-zero": null
+    "stylistic/number-leading-zero": null,
+    "value-no-vendor-prefix": null
   }
 }

@@ -1,6 +1,14 @@
 {
   "version": "0.2",
-  "words": ["ccircle", "hstack", "jsdelivr", "Segoe", "twbs"],
+  "words": [
+    "ccircle",
+    "Dropup",
+    "hstack",
+    "jsdelivr",
+    "Oliff",
+    "Segoe",
+    "twbs"
+  ],
   "language": "en,en-US",
   "allowCompoundWords": true,
   "ignorePaths": [
