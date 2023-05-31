@@ -1,6 +1,6 @@
 /*!
- * Bootstrap for IE11 v5.2.3 (https://github.com/coliff/bootstrap-ie11)
- * Copyright 2022 C.Oliff
+ * Bootstrap for IE11 v5.3.0 (https://github.com/coliff/bootstrap-ie11)
+ * Copyright 2023 C.Oliff
  * Licensed under MIT (https://github.com/coliff/bootstrap-ie11/blob/main/LICENSE)
  */
 @media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -69,6 +69,36 @@
   .user-select-auto {
     -ms-user-select: auto !important;
   }
+  .link-opacity-10 {
+    opacity: 0.1;
+  }
+  .link-opacity-25 {
+    opacity: 0.25;
+  }
+  .link-opacity-50 {
+    opacity: 0.5;
+  }
+  .link-opacity-75 {
+    opacity: 0.75;
+  }
+  .link-opacity-100 {
+    opacity: 1;
+  }
+  .link-opacity-10-hover:hover {
+    opacity: 0.1;
+  }
+  .link-opacity-25-hover:hover {
+    opacity: 0.25;
+  }
+  .link-opacity-50-hover:hover {
+    opacity: 0.5;
+  }
+  .link-opacity-75-hover:hover {
+    opacity: 0.75;
+  }
+  .link-opacity-100-hover:hover {
+    opacity: 1;
+  }
   .text-opacity-75 {
     opacity: 0.75;
   }
@@ -106,6 +136,9 @@
   }
   .border-dark {
     border-color: rgb(33, 37, 41);
+  }
+  .border-black {
+    border-color: rgb(0, 0, 0);
   }
   .border-white {
     border-color: rgb(255, 255, 255);
@@ -287,6 +320,12 @@
   .vstack.gap-5 > *:last-child {
     margin-bottom: 0;
   }
+  .d-grid {
+    display: -ms-grid;
+  }
+  .d-inline-grid {
+    display: -ms-inline-grid;
+  }
   .vr {
     border-right: 1px solid rgb(33, 37, 41);
   }
@@ -336,6 +375,30 @@
   .form-check .form-check-input[type=radio] {
     margin-top: 0.27em;
     margin-left: -1.3em;
+  }
+  .form-check-input:checked {
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+  }
+  .form-check-input:checked[type=checkbox] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+  }
+  .form-check-input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e") !important;
+  }
+  .form-check-input[type=checkbox]:indeterminate {
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e") !important;
+  }
+  .form-switch .form-check-input {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+  }
+  .form-switch .form-check-input:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2386b7fe'/%3e%3c/svg%3e");
+  }
+  .form-switch .form-check-input:checked {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
   }
   .form-switch .form-check-input,
   .form-switch .form-check-input:focus {

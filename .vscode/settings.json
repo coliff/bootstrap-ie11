@@ -1,3 +1,6 @@
 {
-  "css.lint.ieHack": "warning"
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.formatOnSave": true
 }
