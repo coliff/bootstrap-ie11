@@ -1,18 +1,18 @@
-name: 'Check spelling'
+name: "Check spelling"
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
 
-permissions:  # added using https://github.com/step-security/secure-workflows
+permissions:
   contents: read
 
 jobs:
   spellcheck:
     permissions:
-      contents: read  # for streetsidesoftware/cspell-action to fetch files for commit
-      pull-requests: read  # for streetsidesoftware/cspell-action to fetch commits for PR
+      contents: read # for streetsidesoftware/cspell-action to fetch files for commit
+      pull-requests: read # for streetsidesoftware/cspell-action to fetch commits for PR
     runs-on: ubuntu-latest
     if: ${{ github.actor != 'dependabot[bot]' }}
     steps:

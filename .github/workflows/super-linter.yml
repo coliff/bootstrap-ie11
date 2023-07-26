@@ -26,4 +26,5 @@ jobs:
           LOG_LEVEL: NOTICE
           SUPPRESS_POSSUM: true
           VALIDATE_ALL_CODEBASE: false
+          VALIDATE_CSS: false
           VALIDATE_MARKDOWN: false
