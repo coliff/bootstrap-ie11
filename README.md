@@ -77,11 +77,6 @@ The CSS can be loaded via a CDN:
 - View a list of known issues at [https://github.com/coliff/bootstrap-ie11/issues](https://github.com/coliff/bootstrap-ie11/issues).
 - From Bootstrap 5.2 onwards, CSS custom properties are used extensively which can cause issues with the ie11CustomProperties polyfill.
 
-### How can I test this?
-
-- Microsoft offer free [Windows 7/8.1 VMs with IE11](https://developer.microsoft.com/microsoft-edge/tools/vms/)
-- [BrowserStack](https://www.browserstack.com) also offers IE11 for testing
-
 ## Demo
 
 See this in action at: [https://coliff.github.io/bootstrap-ie11/tests/](https://coliff.github.io/bootstrap-ie11/tests/)

@@ -2,6 +2,14 @@
   "name": "coliff/bootstrap-ie11",
   "description": "Bootstrap 5 for Internet Explorer 11",
   "license": "MIT",
+  "homepage": "https://github.com/coliff/bootstrap-ie11#readme",
+  "keywords": [
+    "bootstrap",
+    "css",
+    "ie",
+    "internet-explorer",
+    "polyfill"
+  ],
   "authors": [
     {
       "name": "Christian Oliff",

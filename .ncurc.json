@@ -1,0 +1,4 @@
+{
+  "upgrade": true,
+  "reject": ["clean-css-cli"]
+}
