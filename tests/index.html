@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap 5 - IE11 Test</title>
   <meta name="description" content="Bootstrap 5 for Internet Explorer 11 Test Page">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/bootstrap-ie11.css"
     media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
 
   <!-- required JavaScript polyfills for IE11 -->
   <script nomodule crossorigin="anonymous"
@@ -43,7 +43,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fixed-top mb-5" id="nav">
     <div class="container">
       <a class="navbar-brand" href="#">Bootstrap 5 for IE 11 <small
-          class="opacity-50 text-muted small fs-6">v5.3.1</small></a>
+          class="opacity-50 text-muted small fs-6">v5.3.2</small></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -121,6 +121,7 @@
               <li><a class="dropdown-item small" href="#clearfix">Clearfix</a></li>
               <li><a class="dropdown-item small" href="#color-and-background">Color & background</a></li>
               <li><a class="dropdown-item small" href="#colored-links">Colored links</a></li>
+              <li><a class="dropdown-item small" href="#focus-ring">Focus ring</a></li>
               <li><a class="dropdown-item small" href="#ratio">Ratio</a></li>
               <li><a class="dropdown-item small" href="#stacks">Stacks</a></li>
               <li><a class="dropdown-item small" href="#text-truncation">Text truncation</a></li>
@@ -2421,6 +2422,14 @@
     <a href="#" class="link-light">Light link</a>
     <a href="#" class="link-dark">Dark link</a>
 
+    <hr class="my-5" id="focus-ring">
+
+    <h3 class="pt-3">Focus ring</h3>
+
+    <a href="#focus-ring" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
+      Custom focus ring
+    </a>
+
     <hr class="my-5" id="ratio">
 
     <h3 class="pt-3">Ratio</h3>
@@ -2879,7 +2888,7 @@
 
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
