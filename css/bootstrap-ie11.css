@@ -612,6 +612,33 @@
     left: 0;
     margin-left: 8px;
   }
+  .link-primary {
+    color: #0d6efd;
+  }
+  .link-secondary {
+    color: #6c757d;
+  }
+  .link-success {
+    color: #198754;
+  }
+  .link-danger {
+    color: #dc3545;
+  }
+  .link-warning {
+    color: #ffc107;
+  }
+  .link-info {
+    color: #0dcaf0;
+  }
+  .link-light {
+    color: #f8f9fa;
+  }
+  .link-dark {
+    color: #212529;
+  }
+  .link-body-emphasis {
+    color: #000;
+  }
   .ratio-1x1::before {
     padding-top: 100%;
   }
