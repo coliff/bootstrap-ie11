@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-ie11",
-  "version": "5.3.2",
+  "version": "5.3.3",
   "description": "Bootstrap 5 for Internet Explorer 11",
   "keywords": [
     "bootstrap",
@@ -47,9 +47,9 @@
   "devDependencies": {
     "clean-css-cli": "4.3.0",
     "npm-run-all": "4.1.5",
-    "sass": "1.69.6",
+    "sass": "1.71.0",
     "stylelint": "16.2.1",
-    "stylelint-config-twbs-bootstrap": "13.0.0"
+    "stylelint-config-twbs-bootstrap": "14.0.0"
   },
   "sass": "scss/bootstrap-ie11.scss"
 }
