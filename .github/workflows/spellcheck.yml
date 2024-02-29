@@ -22,4 +22,3 @@ jobs:
           check_dot_files: false
           incremental_files_only: true
           inline: warning
-          strict: false
