@@ -63,7 +63,7 @@ The CSS can be loaded via a CDN:
 - Fix for vertical rule `.vr` class
 - Bootstrap 5 Beta 2 is loaded via CDN (The JavaScript in Bootstrap 5 Beta 3 and later is incompatible)
 - Polyfill for CSS custom properties ([ie11CustomProperties](https://github.com/nuxodin/ie11CustomProperties))
-- Polyfill to fix most JavaScript components ([Polyfill.io](https://polyfill-fastly.io/v3/))
+- Polyfill to fix most JavaScript components ([Polyfill](https://polyfill-fastly.io/v3/))
 - Polyfill to fix tabs ([element-qsa-scope polyfill](https://www.npmjs.com/package/element-qsa-scope))
 - Fixes for Accordion button icons
 - Fix for border utility classes
