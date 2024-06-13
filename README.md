@@ -84,6 +84,12 @@ After downloading the dependencies, update your script to reference these local 
 </script>
 ```
 
+## Forcing IE11 Out of Compatibility Mode
+If Internet Explorer is running in Compatibility Mode, it'll behave like an eariler version which could prevent bootstrap-ie11 from working properly. To ensure Internet Explorer 11 does not run your site in compatibility mode, add the following meta tag to your page:
+``` html
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+```
+
 ## FAQS
 
 ### What does this fix/polyfill?
