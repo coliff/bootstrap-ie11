@@ -57,6 +57,33 @@ To enhance the maintainability and readability of your HTML, you can split the `
 </script>
 ```
 
+### Getting local copies of dependencies
+
+For environments where you need local copies of the dependencies, follow these steps to download and reference them locally:
+
+* [Bootstrap CSS](https://github.com/twbs/bootstrap/tree/v5.0.0-beta2/dist/css) - download the .css and corresponding .map files
+* [Bootstrap JS](https://github.com/twbs/bootstrap/tree/v5.0.0-beta2/dist/js) - download the .js and corresponding .map files
+* [IE11 Custom Properties](https://github.com/nuxodin/ie11CustomProperties/blob/master/ie11CustomProperties.js)
+* [Element QSA Scope](https://github.com/jonathantneal/element-qsa-scope/blob/master/index.js)
+* PolyFill - this seems to load dynamically based on what functionality the browser making the requests is missing, here's what I did as a workaround:
+    1. Open IE11 or Edge in IE11 mode (search "IE mode" in Edge settings to find and enable)
+    2. Copy/paste the URI in the `src` attribute of the `<script>` tag into the browser's URI bar and hit enter, the response will be whatever your app would receive
+    3. Copy/paste the text on the page and save it to a new file, now you have a local copy
+
+After downloading the dependencies, update your script to reference these local files:
+``` html
+<script nomodule>
+    window.MSInputMethodContext && document.documentMode &&
+        document.write(
+            '<link rel="stylesheet" href="css/bootstrap-ie11.min.css">'
+            + '<script src="js/bootstrap.bundle.min.js"><\/script>'
+            + '<script src="js/ie11CustomProperties.js"><\/script>'
+            + '<script src="js/elementQsaScope.js"><\/script>'
+            + '<script src="js/polyfill.js"><\/script>'
+        );
+</script>
+```
+
 ## FAQS
 
 ### What does this fix/polyfill?
