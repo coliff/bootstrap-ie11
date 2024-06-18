@@ -8,17 +8,25 @@ on:
     branches:
       - "main"
 
+permissions:
+  contents: read
+
 jobs:
   build:
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      statuses: write # for github/super-linter/slim to mark status of each linter run
     name: Lint Code Base
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Lint Code Base
-        uses: github/super-linter/slim@v5
+        uses: super-linter/super-linter/slim@v6
         env:
           DEFAULT_BRANCH: main
           FILTER_REGEX_EXCLUDE: .*css/.*
@@ -26,5 +34,6 @@ jobs:
           LOG_LEVEL: NOTICE
           SUPPRESS_POSSUM: true
           VALIDATE_ALL_CODEBASE: false
+          VALIDATE_CHECKOV: false
           VALIDATE_CSS: false
           VALIDATE_MARKDOWN: false
