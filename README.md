@@ -48,7 +48,7 @@ To enhance the maintainability and readability of your HTML, you can split the `
 <script nomodule>
     window.MSInputMethodContext && document.documentMode &&
         document.write(
-            '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.2.3/css/bootstrap-ie11.min.css">'
+            '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.3.3/css/bootstrap-ie11.min.css">'
             + '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"><\/script>'
             + '<script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties@4"><\/script>'
             + '<script src="https://cdn.jsdelivr.net/npm/element-qsa-scope@1"><\/script>'
@@ -87,7 +87,7 @@ After downloading the dependencies, update your script to reference these local 
 
 ## Forcing IE11 Out of Compatibility Mode
 
-If Internet Explorer is running in Compatibility Mode, it'll behave like an eariler version which could prevent bootstrap-ie11 from working properly. To ensure Internet Explorer 11 does not run your site in compatibility mode, add the following meta tag to your page:
+If Internet Explorer is running in Compatibility Mode, it'll behave like an earlier version which could prevent bootstrap-ie11 from working properly. To ensure Internet Explorer 11 does not run your site in compatibility mode, add the following meta tag to your page:
 
 ```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
