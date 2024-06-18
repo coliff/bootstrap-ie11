@@ -1,5 +1,6 @@
 {
   "bracketSameLine": true,
   "bracketSpacing": false,
+  "embeddedLanguageFormatting": "off",
   "printWidth": 120
 }
