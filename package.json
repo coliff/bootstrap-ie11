@@ -38,7 +38,9 @@
     "css-lint": "stylelint \"scss/*.scss\" --fix -f verbose",
     "css-minify": "cleancss --format breakWith=lf --source-map --source-map-inline-sources --output css/bootstrap-ie11.min.css css/bootstrap-ie11.css",
     "html-lint": "npx htmlhint \"tests/*.html\"",
-    "prettier": "npx prettier --write \"**/*.{json,scss,yml}\"",
+    "pa11y": "npx pa11y https://coliff.github.io/bootstrap-ie11/tests/",
+    "prettier": "npx prettier --write \"**/*.{json,md,scss,yml}\"",
+    "spellcheck": "npx cspell \"**/*.*\" --no-progress",
     "test": "npm run css-lint"
   },
   "config": {
