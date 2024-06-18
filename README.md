@@ -71,7 +71,8 @@ For environments where you need local copies of the dependencies, follow these s
     3. Copy/paste the text on the page and save it to a new file, now you have a local copy
 
 After downloading the dependencies, update your script to reference these local files:
-``` html
+
+```html
 <script nomodule>
     window.MSInputMethodContext && document.documentMode &&
         document.write(
@@ -85,8 +86,10 @@ After downloading the dependencies, update your script to reference these local 
 ```
 
 ## Forcing IE11 Out of Compatibility Mode
+
 If Internet Explorer is running in Compatibility Mode, it'll behave like an eariler version which could prevent bootstrap-ie11 from working properly. To ensure Internet Explorer 11 does not run your site in compatibility mode, add the following meta tag to your page:
-``` html
+
+```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 ```
 
