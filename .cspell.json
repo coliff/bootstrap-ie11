@@ -2,6 +2,7 @@
   "version": "0.2",
   "words": [
     "ccircle",
+    "codeql",
     "coliff",
     "cpath",
     "csvg",
@@ -17,11 +18,6 @@
   ],
   "language": "en,en-US",
   "allowCompoundWords": true,
-  "ignorePaths": [
-    ".cspell.json",
-    "**/node_modules/**",
-    "*.min.*",
-    "**/scss/**"
-  ],
+  "ignorePaths": [".cspell.json", "**/node_modules/**", "*.min.*", "**/scss/**"],
   "useGitignore": true
 }
