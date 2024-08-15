@@ -3,6 +3,10 @@
   flex-direction: column-reverse;
 }
 
+.form-floating > .form-control {
+  min-height: calc(3.5rem + 2px) !important;
+}
+
 .form-floating > .form-control::-ms-input-placeholder { // stylelint-disable-line
   color: #6c757d;
 }
