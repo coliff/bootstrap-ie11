@@ -36,4 +36,5 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_CHECKOV: false
           VALIDATE_CSS: false
+          VALIDATE_JSON_PRETTIER: false
           VALIDATE_MARKDOWN: false

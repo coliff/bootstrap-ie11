@@ -1,4 +1,3 @@
 {
-  "upgrade": true,
-  "reject": ["clean-css-cli"]
+  "reject": ["clean-css-cli", "sass"]
 }
