@@ -54,5 +54,8 @@
     "stylelint": "16.15.0",
     "stylelint-config-twbs-bootstrap": "15.1.0"
   },
-  "sass": "scss/bootstrap-ie11.scss"
+  "sass": "scss/bootstrap-ie11.scss",
+  "volta": {
+    "node": "20.18.3"
+  }
 }
