@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-ie11",
-  "version": "5.3.3",
+  "version": "5.3.4",
   "description": "Bootstrap 5 for Internet Explorer 11",
   "keywords": [
     "bootstrap",
@@ -56,6 +56,6 @@
   },
   "sass": "scss/bootstrap-ie11.scss",
   "volta": {
-    "node": "20.18.3"
+    "node": "20.19.0"
   }
 }

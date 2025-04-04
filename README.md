@@ -4,10 +4,10 @@
 
 <h3 align="center">Bootstrap 5 for IE 11</h3>
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/coliff/bootstrap-ie11/main/LICENSE)
+[![LICENSE: MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/coliff/bootstrap-ie11/main/LICENSE)
 [![GitHub Super-Linter](https://github.com/coliff/bootstrap-ie11/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
-[![GitHub stars image](https://img.shields.io/github/stars/coliff/bootstrap-ie11.svg?label=github%20stars)](https://github.com/coliff/bootstrap-ie11)
-[![NPM Version](https://img.shields.io/npm/v/bootstrap-ie11)](https://www.npmjs.com/package/bootstrap-ie11)
+[![GitHub stars image](https://img.shields.io/github/stars/coliff/bootstrap-ie11.svg?label=GitHub%20Stars)](https://github.com/coliff/bootstrap-ie11)
+[![npm Version](https://img.shields.io/npm/v/bootstrap-ie11)](https://www.npmjs.com/package/bootstrap-ie11)
 [![jsdelivr](https://data.jsdelivr.com/v1/package/npm/bootstrap-ie11/badge)](https://www.jsdelivr.com/package/npm/bootstrap-ie11)
 
 [Bootstrap 5](https://getbootstrap.com/) drops support for Internet Explorer 11, but you can add support back by simply adding a CSS file and a few JavaScript polyfills.
@@ -17,7 +17,7 @@
 - Download the [latest release](https://github.com/coliff/bootstrap-ie11)
 - Clone the repository `git clone https://github.com/coliff/bootstrap-ie11.git`
 - Install with [npm](https://www.npmjs.com/package/bootstrap-ie11) `npm install bootstrap-ie11`
-- Install with [yarn](https://classic.yarnpkg.com/en/package/bootstrap-ie11) `yarn add bootstrap-ie11`
+- Install with [Yarn](https://classic.yarnpkg.com/en/package/bootstrap-ie11) `yarn add bootstrap-ie11`
 - Install with [Composer](https://packagist.org/packages/coliff/bootstrap-ie11) `composer require coliff/bootstrap-ie11`
 
 ## Usage
@@ -37,7 +37,7 @@ If you'd prefer to load the bootstrap-ie11 CSS without JavaScript you could use 
 The CSS can be loaded via a CDN:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.3.3/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.3.4/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 ```
 
 ### Splitting the `document.write` Method
@@ -48,7 +48,7 @@ To enhance the maintainability and readability of your HTML, you can split the `
 <script nomodule>
   window.MSInputMethodContext && document.documentMode &&
     document.write(
-      '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.3.3/css/bootstrap-ie11.min.css">'
+      '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.3.4/css/bootstrap-ie11.min.css">'
       + '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"><\/script>'
       + '<script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties@4.1.0"><\/script>'
       + '<script src="https://cdn.jsdelivr.net/npm/element-qsa-scope@1.1.0"><\/script>'
@@ -97,6 +97,7 @@ If Internet Explorer is running in Compatibility Mode, it'll behave like an earl
 
 ### What does this fix/polyfill?
 
+- Grid flexbug workaround
 - Workaround for the SVG overflow bug
 - Remove the default vertical scrollbar from `textarea`
 - Correct the text-wrapping and color inheritance for `legend`
