@@ -9,3 +9,10 @@
 .card-img-bottom {
   flex-shrink: 0;
 }
+
+// REF: https://github.com/philipwalton/flexbugs#flexbug-4
+@media (min-width: 576px) {
+  .card-group > .card {
+    flex: 1 0 0%;
+  }
+}

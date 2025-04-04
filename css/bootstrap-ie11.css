@@ -1,6 +1,6 @@
 /*!
- * Bootstrap for IE11 v5.3.3 (https://github.com/coliff/bootstrap-ie11)
- * Copyright 2020-2024 C.Oliff
+ * Bootstrap for IE11 v5.3.4 (https://github.com/coliff/bootstrap-ie11)
+ * Copyright 2020-2025 C.Oliff
  * Licensed under MIT (https://github.com/coliff/bootstrap-ie11/blob/main/LICENSE)
  */
 @media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -30,6 +30,36 @@
   main {
     display: block;
   }
+  .col {
+    flex: 1 0 0%;
+  }
+}
+@media (-ms-high-contrast: active) and (min-width: 576px), (-ms-high-contrast: none) and (min-width: 576px) {
+  .col-sm {
+    flex: 1 0 0%;
+  }
+}
+@media (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
+  .col-md {
+    flex: 1 0 0%;
+  }
+}
+@media (-ms-high-contrast: active) and (min-width: 992px), (-ms-high-contrast: none) and (min-width: 992px) {
+  .col-lg {
+    flex: 1 0 0%;
+  }
+}
+@media (-ms-high-contrast: active) and (min-width: 1200px), (-ms-high-contrast: none) and (min-width: 1200px) {
+  .col-xl {
+    flex: 1 0 0%;
+  }
+}
+@media (-ms-high-contrast: active) and (min-width: 1400px), (-ms-high-contrast: none) and (min-width: 1400px) {
+  .col-xxl {
+    flex: 1 0 0%;
+  }
+}
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .table > :not(caption) > * > * {
     box-shadow: none !important;
   }
@@ -527,6 +557,13 @@
   .card-img-bottom {
     flex-shrink: 0;
   }
+}
+@media (-ms-high-contrast: active) and (min-width: 576px), (-ms-high-contrast: none) and (min-width: 576px) {
+  .card-group > .card {
+    flex: 1 0 0%;
+  }
+}
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     transform: rotate(-180deg);

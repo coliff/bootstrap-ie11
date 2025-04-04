@@ -1,11 +1,12 @@
 /*!
- * Bootstrap for IE11 v5.3.3 (https://github.com/coliff/bootstrap-ie11)
- * Copyright 2020-2024 C.Oliff
+ * Bootstrap for IE11 v5.3.4 (https://github.com/coliff/bootstrap-ie11)
+ * Copyright 2020-2025 C.Oliff
  * Licensed under MIT (https://github.com/coliff/bootstrap-ie11/blob/main/LICENSE)
  */
 
 @media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   @import "reboot";
+  @import "mixins/grid";
   @import "tables";
   @import "utilities";
   @import "breadcrumb";
