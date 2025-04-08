@@ -37,7 +37,7 @@ If you'd prefer to load the bootstrap-ie11 CSS without JavaScript you could use 
 The CSS can be loaded via a CDN:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.3.4/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.3.5/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 ```
 
 ### Splitting the `document.write` Method
@@ -48,7 +48,7 @@ To enhance the maintainability and readability of your HTML, you can split the `
 <script nomodule>
   window.MSInputMethodContext && document.documentMode &&
     document.write(
-      '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.3.4/css/bootstrap-ie11.min.css">'
+      '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.3.5/css/bootstrap-ie11.min.css">'
       + '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"><\/script>'
       + '<script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties@4.1.0"><\/script>'
       + '<script src="https://cdn.jsdelivr.net/npm/element-qsa-scope@1.1.0"><\/script>'
@@ -90,7 +90,7 @@ After downloading the dependencies, update your script to reference these local 
 If Internet Explorer is running in Compatibility Mode, it'll behave like an earlier version which could prevent bootstrap-ie11 from working properly. To ensure Internet Explorer 11 does not run your site in compatibility mode, add the following meta tag to your page:
 
 ```html
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
 ```
 
 ## FAQS
