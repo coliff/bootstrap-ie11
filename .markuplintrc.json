@@ -1,0 +1,33 @@
+{
+  "rules": {
+    "attr-duplication": true,
+    "attr-value-quotes": "double",
+    "case-sensitive-tag-name": "lower",
+    "deprecated-attr": false,
+    "deprecated-element": true,
+    "doctype": "always",
+    "heading-levels": false,
+    "id-duplication": true,
+    "ineffective-attr": false,
+    "invalid-attr": false,
+    "label-has-control": true,
+    "landmark-roles": false,
+    "neighbor-popovers": true,
+    "require-datetime": true,
+    "required-attr": false,
+    "required-h1": false,
+    "use-list": true
+  },
+  "nodeRules": [
+    {
+      "selector": "meta[property]",
+      "rules": {
+        "invalid-attr": {
+          "options": {
+            "allowAttrs": ["property", "content"]
+          }
+        }
+      }
+    }
+  ]
+}

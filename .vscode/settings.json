@@ -1,8 +1,13 @@
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit"
+    "source.fixAll": "explicit",
+    "source.fixAll.stylelint": "always"
   },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "css.lint.vendorPrefix": "ignore",
-  "scss.lint.vendorPrefix": "ignore"
+  "scss.lint.vendorPrefix": "ignore",
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.validate": ["scss"]
 }
