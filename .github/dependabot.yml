@@ -2,8 +2,6 @@ version: 2
 updates:
   - package-ecosystem: npm
     directory: "/"
-    reviewers:
-      - coliff
     schedule:
       interval: monthly
     versioning-strategy: increase
