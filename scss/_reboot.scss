@@ -39,3 +39,10 @@ template {
 main {
   display: block;
 }
+
+[type="search"] {
+  // consistent appearance for search cancel button
+  &::-ms-clear {
+    opacity: 0.7;
+  }
+}
