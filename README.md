@@ -37,7 +37,7 @@ If you'd prefer to load the bootstrap-ie11 CSS without JavaScript you could use 
 The CSS can be loaded via a CDN:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.3.6/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.3.7/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 ```
 
 ### Splitting the `document.write` Method
@@ -48,7 +48,7 @@ To enhance the maintainability and readability of your HTML, you can split the `
 <script nomodule>
   window.MSInputMethodContext && document.documentMode &&
     document.write(
-      '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.3.6/css/bootstrap-ie11.min.css">'
+      '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.3.7/css/bootstrap-ie11.min.css">'
       + '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"><\/script>'
       + '<script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties@4.1.0"><\/script>'
       + '<script src="https://cdn.jsdelivr.net/npm/element-qsa-scope@1.1.0"><\/script>'
