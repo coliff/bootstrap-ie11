@@ -6,6 +6,7 @@ updates:
       interval: monthly
     versioning-strategy: increase
     open-pull-requests-limit: 1
+
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
@@ -14,4 +15,4 @@ updates:
       github-actions:
         patterns:
           - "*"
-    open-pull-requests-limit: 2
+    open-pull-requests-limit: 1
