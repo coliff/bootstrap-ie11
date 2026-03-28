@@ -31,7 +31,7 @@
     display: block;
   }
   [type=search]::-ms-clear {
-    opacity: 0.2;
+    opacity: 0.7;
   }
   .col {
     flex: 1 0 0%;

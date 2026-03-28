@@ -1,5 +1,6 @@
 {
   "extends": "stylelint-config-twbs-bootstrap",
+  "ignoreFiles": ["**/*.css"],
   "rules": {
     "@stylistic/number-leading-zero": null,
     "declaration-no-important": null,
